@@ -203,3 +203,6 @@ benchmarks/*.json
 # Linting
 actionlint
 shellcheck*/
+
+# Models
+models/*
