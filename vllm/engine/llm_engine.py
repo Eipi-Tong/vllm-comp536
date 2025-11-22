@@ -406,7 +406,7 @@ class LLMEngine:
 
         self.seq_id_to_seq_group: Dict[str, SequenceGroupBase] = {}
 
-        self.simulator = Simulator()
+        self.simulator = Simulator(self.tokenizer)
         logger.info("Simulator mode enabled: GPU execution will be bypassed.")
 
     def _initialize_kv_caches(self) -> None:
