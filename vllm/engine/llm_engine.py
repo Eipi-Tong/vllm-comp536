@@ -50,6 +50,7 @@ from vllm.sequence import (ExecuteModelRequest, ParallelSampleSequenceGroup,
                            PoolingSequenceGroupOutput, Sequence, SequenceGroup,
                            SequenceGroupBase, SequenceGroupMetadata,
                            SequenceGroupOutput, SequenceStatus)
+from vllm.simulator.simulator import Simulator
 from vllm.tracing import (SpanAttributes, SpanKind, extract_trace_context,
                           init_tracer)
 from vllm.transformers_utils.detokenizer import Detokenizer
@@ -404,6 +405,9 @@ class LLMEngine:
             ))
 
         self.seq_id_to_seq_group: Dict[str, SequenceGroupBase] = {}
+
+        self.simulator = Simulator()
+        logger.info("Simulator mode enabled: GPU execution will be bypassed.")
 
     def _initialize_kv_caches(self) -> None:
         """Initialize the KV cache in the worker(s).
@@ -1387,8 +1391,10 @@ class LLMEngine:
                 execute_model_req.async_callback = self.async_callbacks[
                     virtual_engine]
 
-            outputs = self.model_executor.execute_model(
-                execute_model_req=execute_model_req)
+            # outputs = self.model_executor.execute_model(
+            #     execute_model_req=execute_model_req)
+            
+            outputs = self.simulator.step(scheduler_outputs)
 
             # We need to do this here so that last step's sampled_token_ids can
             # be passed to the next iteration for PP.

@@ -331,6 +331,22 @@ class Scheduler:
     ) -> None:
         self.scheduler_config = scheduler_config
         self.cache_config = cache_config
+
+        # Milestone 1: Mock GPU memory for Simulation
+        # Even if we are on CPU (which provides many blocks), we overwrite it
+        # to simulate a specific GPU size (e.g., 1024 blocks).
+        
+        # Define your simulated capacity
+        SIMULATED_GPU_BLOCKS = 8192  # Adjust this to stress-test the scheduler
+        
+        if self.cache_config.num_gpu_blocks is None or self.cache_config.num_gpu_blocks == 0:
+            # Original hack for safety
+            self.cache_config.num_gpu_blocks = SIMULATED_GPU_BLOCKS
+        else:
+            # NEW: Overwrite CPU-detected blocks to ensure consistent simulation
+            logger.info(f"Simulator: Overwriting detected blocks ({self.cache_config.num_gpu_blocks}) with simulated capacity ({SIMULATED_GPU_BLOCKS})")
+            self.cache_config.num_gpu_blocks = SIMULATED_GPU_BLOCKS
+
         # Note for LoRA scheduling: the current policy is extremely
         # simple and NOT fair. It can lead to starvation of some
         # LoRAs. This should be improved in the future.
