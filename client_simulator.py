@@ -71,10 +71,10 @@ class ShareGPTClient:
             return None, 0
 
     async def process_conversation(self, session, conversation_id, raw_conv, multi_turn):
-        """
-        Handles a single conversation, potentially with multiple turns.
-        """
-        history = []
+        history = [
+            # Force a long shared prefix for every single request
+            # {"role": "system", "content": "You are a helpful assistant. " * 50} 
+        ]
         
         # Iterate through turns
         # ShareGPT is [User, Assistant, User, Assistant...]

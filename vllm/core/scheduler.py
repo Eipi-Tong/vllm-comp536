@@ -1300,12 +1300,50 @@ class Scheduler:
     def schedule(
             self
     ) -> Tuple[List[SequenceGroupMetadata], SchedulerOutputs, bool]:
+        # --- DEBUG CHECK ---
+        # Only print this once (or infrequently) to avoid spamming
+        # Using a simple static counter or similar mechanism
+        if not hasattr(self, "_debug_printed_cache_config"):
+            logger.info(f"[DEBUG] Prefix Caching Enabled: {self.cache_config.enable_prefix_caching}")
+            logger.info(f"[DEBUG] Block Size: {self.cache_config.block_size}")
+            self._debug_printed_cache_config = True
+        # -------------------
         # Schedule sequence groups.
         # This function call changes the internal states of the scheduler
         # such as self.running, self.swapped, and self.waiting.
         scheduler_start_time = time.perf_counter()
 
         scheduler_outputs: SchedulerOutputs = self._schedule()
+        
+        # --- NEW: CORRECTED INSTRUMENTATION FOR MILESTONE 2 ---
+        if scheduler_outputs.scheduled_seq_groups:
+            try:
+                for scheduled_group in scheduler_outputs.scheduled_seq_groups:
+                    seq_group = scheduled_group.seq_group
+                    
+                    if seq_group.is_prefill():
+                        # Use the BlockManager to find blocks that are ALREADY computed
+                        # This works for both Concurrent sharing (ref>1) and Temporal sharing (ref=1 but cached)
+                        computed_blocks = self.block_manager.get_common_computed_block_ids(
+                            seq_group.get_seqs())
+                        
+                        num_computed_blocks = len(computed_blocks)
+                        total_tokens = seq_group.get_seqs()[0].get_prompt_len()
+                        
+                        # Approximate hit tokens based on blocks (since we cache full blocks)
+                        cached_tokens = num_computed_blocks * self.cache_config.block_size
+                        
+                        if num_computed_blocks > 0:
+                            hit_rate = (cached_tokens / total_tokens) * 100
+                            logger.info(f"[Metrics] Req {seq_group.request_id}: "
+                                        f"Prefix Hit! ~{cached_tokens}/{total_tokens} tokens ({hit_rate:.1f}%) shared.")
+                        else:
+                            logger.info(f"[Metrics] Req {seq_group.request_id}: Cold Start (0 blocks shared).")
+                            
+            except Exception as e:
+                logger.warning(f"[Metrics] Error calculating prefix stats: {e}")
+        # --------------------------------------------
+
         now = time.time()
 
         if not self.cache_config.enable_prefix_caching:
