@@ -40,7 +40,7 @@ class Simulator:
         # 2. Robust Path Resolution
         base_path = os.getcwd() 
         # Default path based on your snippet
-        relative_path = "datasets/ShareGPT_Vicuna_unfiltered/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json"
+        relative_path = "datasets/ShareGPT_Vicuna_unfiltered/cleaned_dataset_no_imsorry.json"
         
         # Try ENV, then relative, then absolute, then user-provided hardcoded path
         possible_paths = []
@@ -51,7 +51,7 @@ class Simulator:
             relative_path,
             os.path.abspath(relative_path),
             os.path.join(base_path, relative_path),
-            "../../datasets/ShareGPT_Vicuna_unfiltered/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json"
+            "../../datasets/ShareGPT_Vicuna_unfiltered/cleaned_dataset_no_imsorry.json"
         ])
 
         loaded = False
@@ -124,6 +124,38 @@ class Simulator:
             logger.error(f"Simulator: Error loading trace: {e}")
             logger.error(traceback.format_exc())
             sys.stdout.flush()
+    
+    # def simulate_step(self) -> List[SamplerOutput]:
+    #     """
+    #     Simulates a single step of model execution by returning the next token
+    #     from the pre-recorded traces for each scheduled sequence group.
+    #     If a trace is exhausted, returns EOS token.
+    #     """
+    #     completion_seq_group_outputs = []
+    #     output = CompletionSequenceGroupOutput(
+    #         samples=[
+    #             SequenceOutput(
+    #                 parent_seq_id=request_id,
+    #                 output_token=new_token,
+    #                 logprobs={
+    #                     new_token: Logprob(
+    #                     logprob=float("inf"), 
+    #                     rank=None, 
+    #                     decoded_token=None)
+    #                 }
+    #             )
+    #         ],
+    #         prompt_logprobs=None
+    #     )
+    #     completion_seq_group_outputs.append(output)
+    #     outputs = [
+    #         SamplerOutput(outputs=completion_seq_group_outputs, 
+    #                       sampled_token_probs=None,
+    #                       sampled_token_ids=None,
+    #                       spec_decode_worker_metrics=None)
+    #     ]
+    #     return outputs
+
 
     def step(self, scheduler_outputs: SchedulerOutputs) -> List[SamplerOutput]:
         try:

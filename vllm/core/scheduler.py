@@ -332,7 +332,7 @@ class Scheduler:
         self.scheduler_config = scheduler_config
         self.cache_config = cache_config
 
-        # Milestone 1: Mock GPU memory for Simulation
+        ## Milestone 1: Mock GPU memory for Simulation
         # Even if we are on CPU (which provides many blocks), we overwrite it
         # to simulate a specific GPU size (e.g., 1024 blocks).
         
@@ -1389,6 +1389,8 @@ class Scheduler:
                 self.block_manager.access_all_blocks_in_seq(seq, now)
 
             if self.cache_config.enable_prefix_caching:
+                # Can record the block_nums here because only prefill seqs are allowed
+                # to use prefix caching.
                 common_computed_block_nums = (
                     self.block_manager.get_common_computed_block_ids(
                         seq_group.get_seqs(status=SequenceStatus.RUNNING)))
