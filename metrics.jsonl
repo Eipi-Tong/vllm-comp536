@@ -1,0 +1,646 @@
+{"type": "request", "request_id": "cmpl-e18e3d88b8194d57b1271bdbe294ec04-0", "num_computed_blocks": 0, "total_prompt_tokens": 53, "cached_tokens": 0, "hit_rate": 0.0}
+{"type": "request", "request_id": "cmpl-8be4637a3a3449f687b8370ec9e364ca-0", "num_computed_blocks": 0, "total_prompt_tokens": 70, "cached_tokens": 0, "hit_rate": 0.0}
+{"type": "block_hit", "block_ids": [0, 4, 5, 6], "count": 1}
+{"type": "request", "request_id": "cmpl-274eca5303c14afc8e82922b6a8c1530-0", "num_computed_blocks": 4, "total_prompt_tokens": 360, "cached_tokens": 64, "hit_rate": 0.17777777777777778}
+{"type": "block_hit", "block_ids": [0, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42], "count": 1}
+{"type": "request", "request_id": "cmpl-fc0b06837ad641289dd8045417613a3d-0", "num_computed_blocks": 22, "total_prompt_tokens": 707, "cached_tokens": 352, "hit_rate": 0.49787835926449786}
+{"type": "block_hit", "block_ids": [0, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84], "count": 1}
+{"type": "request", "request_id": "cmpl-91b1e49a76784132898850d75c98901e-0", "num_computed_blocks": 44, "total_prompt_tokens": 1025, "cached_tokens": 704, "hit_rate": 0.686829268292683}
+{"type": "block_hit", "block_ids": [0, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121], "count": 1}
+{"type": "request", "request_id": "cmpl-c7e74813f7ad4356967eb16371188473-0", "num_computed_blocks": 64, "total_prompt_tokens": 1336, "cached_tokens": 1024, "hit_rate": 0.7664670658682635}
+{"type": "block_hit", "block_ids": [0, 4, 5, 6, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158], "count": 1}
+{"type": "request", "request_id": "cmpl-e89cf612827c4b26bf07eb6bdaf118d4-0", "num_computed_blocks": 83, "total_prompt_tokens": 1666, "cached_tokens": 1328, "hit_rate": 0.7971188475390156}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-168162ed47a743b79c69c76c22604a55-0", "num_computed_blocks": 1, "total_prompt_tokens": 98, "cached_tokens": 16, "hit_rate": 0.16326530612244897}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-2a958a5119604d0d978e05ec0876714d-0", "num_computed_blocks": 1, "total_prompt_tokens": 127, "cached_tokens": 16, "hit_rate": 0.12598425196850394}
+{"type": "block_hit", "block_ids": [0, 245, 246, 247, 248, 249, 250], "count": 1}
+{"type": "request", "request_id": "cmpl-e90bdd4d24434602a6cfe28a24c519b7-0", "num_computed_blocks": 7, "total_prompt_tokens": 265, "cached_tokens": 112, "hit_rate": 0.4226415094339623}
+{"type": "block_hit", "block_ids": [0, 245, 246, 247, 248, 249, 250, 259, 260, 261, 262, 263, 264, 265, 266, 267], "count": 1}
+{"type": "request", "request_id": "cmpl-0b603013894a42d6bcb830255a9897c5-0", "num_computed_blocks": 16, "total_prompt_tokens": 559, "cached_tokens": 256, "hit_rate": 0.45796064400715564}
+{"type": "block_hit", "block_ids": [0, 245, 246, 247, 248, 249, 250, 259, 260, 261, 262, 263, 264, 265, 266, 267, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303], "count": 1}
+{"type": "request", "request_id": "cmpl-e76f9cc86d9f439aaa9ea7e566f4bdd4-0", "num_computed_blocks": 34, "total_prompt_tokens": 904, "cached_tokens": 544, "hit_rate": 0.6017699115044248}
+{"type": "block_hit", "block_ids": [0, 245, 246, 247, 248, 249, 250, 259, 260, 261, 262, 263, 264, 265, 266, 267, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346], "count": 1}
+{"type": "request", "request_id": "cmpl-7b162405ab9f40e68e2146eae766c488-0", "num_computed_blocks": 56, "total_prompt_tokens": 1301, "cached_tokens": 896, "hit_rate": 0.6887009992313605}
+{"type": "block_hit", "block_ids": [0, 245, 246, 247, 248, 249, 250, 259, 260, 261, 262, 263, 264, 265, 266, 267, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395], "count": 1}
+{"type": "request", "request_id": "cmpl-167c66f4091447449112708d9d54d080-0", "num_computed_blocks": 81, "total_prompt_tokens": 1886, "cached_tokens": 1296, "hit_rate": 0.6871686108165429}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-f224580e21a743948974bd34af493a72-0", "num_computed_blocks": 1, "total_prompt_tokens": 40, "cached_tokens": 16, "hit_rate": 0.4}
+{"type": "block_hit", "block_ids": [0, 486], "count": 1}
+{"type": "request", "request_id": "cmpl-c91ddd71fd9c4693bcb1a491761cd406-0", "num_computed_blocks": 2, "total_prompt_tokens": 569, "cached_tokens": 32, "hit_rate": 0.056239015817223195}
+{"type": "block_hit", "block_ids": [0, 486, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551], "count": 1}
+{"type": "request", "request_id": "cmpl-c8f10d01d6164a5a9d0fa568d6e226df-0", "num_computed_blocks": 35, "total_prompt_tokens": 1137, "cached_tokens": 560, "hit_rate": 0.4925241864555849}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-5ff7a243ea884a9d8be0b04d912a864a-0", "num_computed_blocks": 1, "total_prompt_tokens": 41, "cached_tokens": 16, "hit_rate": 0.3902439024390244}
+{"type": "block_hit", "block_ids": [0, 671], "count": 1}
+{"type": "request", "request_id": "cmpl-b362b3c7a98b425c80fee2d22cd8f994-0", "num_computed_blocks": 2, "total_prompt_tokens": 817, "cached_tokens": 32, "hit_rate": 0.03916768665850673}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-23e722a5aa8f4eb8b3cd8e541dc62b1b-0", "num_computed_blocks": 1, "total_prompt_tokens": 306, "cached_tokens": 16, "hit_rate": 0.05228758169934641}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-c1761b95fca643a78bba8e8cc13880ff-0", "num_computed_blocks": 1, "total_prompt_tokens": 52, "cached_tokens": 16, "hit_rate": 0.3076923076923077}
+{"type": "block_hit", "block_ids": [0, 810, 811], "count": 1}
+{"type": "request", "request_id": "cmpl-5501c31557a24c55a39cf0238a4ebcf6-0", "num_computed_blocks": 3, "total_prompt_tokens": 251, "cached_tokens": 48, "hit_rate": 0.19123505976095617}
+{"type": "block_hit", "block_ids": [0, 810, 811, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834], "count": 1}
+{"type": "request", "request_id": "cmpl-1ebde1c59b8c405c893dd9dcd4b84d14-0", "num_computed_blocks": 15, "total_prompt_tokens": 715, "cached_tokens": 240, "hit_rate": 0.3356643356643357}
+{"type": "block_hit", "block_ids": [0, 810, 811, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876, 877, 878, 879, 880, 881, 882, 883, 884, 885, 886, 887, 888, 889, 890, 891], "count": 1}
+{"type": "request", "request_id": "cmpl-f5d327832fc545e2a4dcfb814d4816eb-0", "num_computed_blocks": 44, "total_prompt_tokens": 1036, "cached_tokens": 704, "hit_rate": 0.6795366795366795}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-298893b7535a4315b6a064698ea07dd6-0", "num_computed_blocks": 1, "total_prompt_tokens": 53, "cached_tokens": 16, "hit_rate": 0.3018867924528302}
+{"type": "block_hit", "block_ids": [0, 933, 934], "count": 1}
+{"type": "request", "request_id": "cmpl-e66fa0b4996b4ebc87097cb8f8df9935-0", "num_computed_blocks": 3, "total_prompt_tokens": 393, "cached_tokens": 48, "hit_rate": 0.12213740458015267}
+{"type": "block_hit", "block_ids": [0, 933, 934, 936, 937, 938, 939, 940, 941, 942, 943, 944, 945, 946, 947, 948, 949, 950, 951, 952, 953, 954, 955, 956], "count": 1}
+{"type": "request", "request_id": "cmpl-8e779f539da142b1b484cc1a7c21ea16-0", "num_computed_blocks": 24, "total_prompt_tokens": 745, "cached_tokens": 384, "hit_rate": 0.5154362416107383}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-939b378d98aa43b9b821a4a514876121-0", "num_computed_blocks": 1, "total_prompt_tokens": 41, "cached_tokens": 16, "hit_rate": 0.3902439024390244}
+{"type": "block_hit", "block_ids": [0, 1000], "count": 1}
+{"type": "request", "request_id": "cmpl-4ef7210e1ff240deae5f047a0fa9db85-0", "num_computed_blocks": 2, "total_prompt_tokens": 303, "cached_tokens": 32, "hit_rate": 0.10561056105610561}
+{"type": "block_hit", "block_ids": [0, 1000, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032], "count": 1}
+{"type": "request", "request_id": "cmpl-9a58942dc92847bbb10b47caefe1b82d-0", "num_computed_blocks": 18, "total_prompt_tokens": 566, "cached_tokens": 288, "hit_rate": 0.508833922261484}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-ebc53fa0ec9842de82dc2aad7f50577b-0", "num_computed_blocks": 1, "total_prompt_tokens": 86, "cached_tokens": 16, "hit_rate": 0.18604651162790697}
+{"type": "block_hit", "block_ids": [0, 1000, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065], "count": 1}
+{"type": "request", "request_id": "cmpl-1143656f63d244c198aa1553c48bf541-0", "num_computed_blocks": 35, "total_prompt_tokens": 869, "cached_tokens": 560, "hit_rate": 0.6444188722669736}
+{"type": "block_hit", "block_ids": [0, 1000, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112], "count": 1}
+{"type": "request", "request_id": "cmpl-1236b4c75595443c9b90fb6210272fbd-0", "num_computed_blocks": 54, "total_prompt_tokens": 1210, "cached_tokens": 864, "hit_rate": 0.7140495867768595}
+{"type": "block_hit", "block_ids": [0, 1082, 1083, 1084, 1085], "count": 1}
+{"type": "request", "request_id": "cmpl-5e85f5f970184f5da5c976d879f8bff5-0", "num_computed_blocks": 5, "total_prompt_tokens": 726, "cached_tokens": 80, "hit_rate": 0.11019283746556474}
+{"type": "block_hit", "block_ids": [0, 1000, 1017, 1018, 1019, 1020, 1021, 1022, 1023, 1024, 1025, 1026, 1027, 1028, 1029, 1030, 1031, 1032, 1049, 1050, 1051, 1052, 1053, 1054, 1055, 1056, 1057, 1058, 1059, 1060, 1061, 1062, 1063, 1064, 1065, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1155, 1156, 1157, 1158, 1159, 1160, 1161, 1162, 1163, 1164, 1165, 1166, 1167, 1168, 1169, 1170, 1171, 1172, 1173, 1174, 1175], "count": 1}
+{"type": "request", "request_id": "cmpl-ab8fa830bc7b424eb9dc198d3fd05602-0", "num_computed_blocks": 75, "total_prompt_tokens": 1446, "cached_tokens": 1200, "hit_rate": 0.8298755186721992}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-947341c7b32d4e53b4add7cf7e0ba992-0", "num_computed_blocks": 1, "total_prompt_tokens": 46, "cached_tokens": 16, "hit_rate": 0.34782608695652173}
+{"type": "block_hit", "block_ids": [0, 1298], "count": 1}
+{"type": "request", "request_id": "cmpl-f0bf2721e51d4ec990b80f2d0e5fc79a-0", "num_computed_blocks": 2, "total_prompt_tokens": 261, "cached_tokens": 32, "hit_rate": 0.12260536398467432}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325], "count": 1}
+{"type": "request", "request_id": "cmpl-f4c711cf80eb4169aa27f16a4f798f06-0", "num_computed_blocks": 16, "total_prompt_tokens": 515, "cached_tokens": 256, "hit_rate": 0.4970873786407767}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1339, 1340, 1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354], "count": 1}
+{"type": "request", "request_id": "cmpl-655449e07ae84fe29b6ddd802396e7df-0", "num_computed_blocks": 32, "total_prompt_tokens": 801, "cached_tokens": 512, "hit_rate": 0.6392009987515606}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1339, 1340, 1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1372, 1373, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1386, 1387, 1388, 1389], "count": 1}
+{"type": "request", "request_id": "cmpl-403bf7655d2643fa9693785451203716-0", "num_computed_blocks": 50, "total_prompt_tokens": 1009, "cached_tokens": 800, "hit_rate": 0.7928642220019821}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1339, 1340, 1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1372, 1373, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1386, 1387, 1388, 1389, 1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414], "count": 1}
+{"type": "request", "request_id": "cmpl-fa9d21645c43414d85fc40bc70d73b2c-0", "num_computed_blocks": 63, "total_prompt_tokens": 1217, "cached_tokens": 1008, "hit_rate": 0.828266228430567}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1339, 1340, 1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1372, 1373, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1386, 1387, 1388, 1389, 1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439], "count": 1}
+{"type": "request", "request_id": "cmpl-8ff8cd8abdd94e07af44ca094e96e78a-0", "num_computed_blocks": 76, "total_prompt_tokens": 1480, "cached_tokens": 1216, "hit_rate": 0.8216216216216217}
+{"type": "block_hit", "block_ids": [0, 1298, 1312, 1313, 1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325, 1339, 1340, 1341, 1342, 1343, 1344, 1345, 1346, 1347, 1348, 1349, 1350, 1351, 1352, 1353, 1354, 1372, 1373, 1374, 1375, 1376, 1377, 1378, 1379, 1380, 1381, 1382, 1383, 1384, 1385, 1386, 1387, 1388, 1389, 1402, 1403, 1404, 1405, 1406, 1407, 1408, 1409, 1410, 1411, 1412, 1413, 1414, 1427, 1428, 1429, 1430, 1431, 1432, 1433, 1434, 1435, 1436, 1437, 1438, 1439, 1455, 1456, 1457, 1458, 1459, 1460, 1461, 1462, 1463, 1464, 1465, 1466, 1467, 1468, 1469, 1470], "count": 1}
+{"type": "request", "request_id": "cmpl-c0cbb5ce4f234749983d8c00ae879aac-0", "num_computed_blocks": 92, "total_prompt_tokens": 1832, "cached_tokens": 1472, "hit_rate": 0.8034934497816594}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-dbb01aa26a1b44e0bb33106d8122b523-0", "num_computed_blocks": 1, "total_prompt_tokens": 58, "cached_tokens": 16, "hit_rate": 0.27586206896551724}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-4a972ea451ba4154878aaddf348b1a41-0", "num_computed_blocks": 1, "total_prompt_tokens": 69, "cached_tokens": 16, "hit_rate": 0.2318840579710145}
+{"type": "block_hit", "block_ids": [0, 1531, 1532], "count": 1}
+{"type": "request", "request_id": "cmpl-9a1c9115067d486bb81914cd6679f649-0", "num_computed_blocks": 3, "total_prompt_tokens": 837, "cached_tokens": 48, "hit_rate": 0.05734767025089606}
+{"type": "block_hit", "block_ids": [0, 1559, 1560, 1561], "count": 1}
+{"type": "request", "request_id": "cmpl-d62f3f186ef048d2a491da9712665442-0", "num_computed_blocks": 4, "total_prompt_tokens": 627, "cached_tokens": 64, "hit_rate": 0.10207336523125997}
+{"type": "block_hit", "block_ids": [0, 1559, 1560, 1561, 1676, 1677, 1678, 1679, 1680, 1681, 1682, 1683, 1684, 1685, 1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710], "count": 1}
+{"type": "request", "request_id": "cmpl-baf5b2504b164accb5bc3f48854a9d7c-0", "num_computed_blocks": 39, "total_prompt_tokens": 938, "cached_tokens": 624, "hit_rate": 0.6652452025586354}
+{"type": "block_hit", "block_ids": [0, 1531, 1532, 1622, 1623, 1624, 1625, 1626, 1627, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1636, 1637, 1638, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1649, 1650, 1651, 1652, 1653, 1654, 1655, 1656, 1657, 1658, 1659, 1660, 1661, 1662, 1663, 1664, 1665, 1666, 1667, 1668, 1669, 1670], "count": 1}
+{"type": "request", "request_id": "cmpl-35d26395e8af44ca9375e51dd781a608-0", "num_computed_blocks": 52, "total_prompt_tokens": 1339, "cached_tokens": 832, "hit_rate": 0.6213592233009708}
+{"type": "block_hit", "block_ids": [0, 1531, 1532, 1622, 1623, 1624, 1625, 1626, 1627, 1628, 1629, 1630, 1631, 1632, 1633, 1634, 1635, 1636, 1637, 1638, 1639, 1640, 1641, 1642, 1643, 1644, 1645, 1646, 1647, 1648, 1649, 1650, 1651, 1652, 1653, 1654, 1655, 1656, 1657, 1658, 1659, 1660, 1661, 1662, 1663, 1664, 1665, 1666, 1667, 1668, 1669, 1670, 1783, 1784, 1785, 1786, 1787, 1788, 1789, 1790, 1791, 1792, 1793, 1794, 1795, 1796, 1797, 1798, 1799, 1800, 1801, 1802, 1803, 1804, 1805, 1806, 1807, 1808, 1809, 1810, 1811, 1812, 1813], "count": 1}
+{"type": "request", "request_id": "cmpl-8dcb1e9b2ef4438e8d24516442685bf7-0", "num_computed_blocks": 83, "total_prompt_tokens": 1417, "cached_tokens": 1328, "hit_rate": 0.9371912491178547}
+{"type": "block_hit", "block_ids": [0, 1559, 1560, 1561, 1676, 1677, 1678, 1679, 1680, 1681, 1682, 1683, 1684, 1685, 1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710, 1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755, 1756, 1757, 1758, 1759, 1760, 1761, 1762, 1763, 1764, 1765], "count": 1}
+{"type": "request", "request_id": "cmpl-50509cbec6a140ca934d9933699602ca-0", "num_computed_blocks": 58, "total_prompt_tokens": 1203, "cached_tokens": 928, "hit_rate": 0.771404821280133}
+{"type": "block_hit", "block_ids": [0, 1559, 1560, 1561, 1676, 1677, 1678, 1679, 1680, 1681, 1682, 1683, 1684, 1685, 1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710, 1747, 1748, 1749, 1750, 1751, 1752, 1753, 1754, 1755, 1756, 1757, 1758, 1759, 1760, 1761, 1762, 1763, 1764, 1765, 1831, 1832, 1833, 1834, 1835, 1836, 1837, 1838, 1839, 1840, 1841, 1842, 1843, 1844, 1845, 1846, 1847], "count": 1}
+{"type": "request", "request_id": "cmpl-603352c0b7f4491fa4f8cbcad0111713-0", "num_computed_blocks": 75, "total_prompt_tokens": 1438, "cached_tokens": 1200, "hit_rate": 0.8344923504867872}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-4de42ae57de2477d8abefeaeffa623fd-0", "num_computed_blocks": 1, "total_prompt_tokens": 98, "cached_tokens": 16, "hit_rate": 0.16326530612244897}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924], "count": 1}
+{"type": "request", "request_id": "cmpl-1dafcd050d274a69a95abad0c196f0a1-0", "num_computed_blocks": 6, "total_prompt_tokens": 229, "cached_tokens": 96, "hit_rate": 0.4192139737991266}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935], "count": 1}
+{"type": "request", "request_id": "cmpl-37c6b1d19e2f42e9906c684d5cb89c16-0", "num_computed_blocks": 14, "total_prompt_tokens": 437, "cached_tokens": 224, "hit_rate": 0.5125858123569794}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960], "count": 1}
+{"type": "request", "request_id": "cmpl-608d26f27ef340cc8bb324bd29456e48-0", "num_computed_blocks": 27, "total_prompt_tokens": 576, "cached_tokens": 432, "hit_rate": 0.75}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977], "count": 1}
+{"type": "request", "request_id": "cmpl-b8d9680bef8947b8a3dcb341bbced2c9-0", "num_computed_blocks": 36, "total_prompt_tokens": 908, "cached_tokens": 576, "hit_rate": 0.6343612334801763}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013], "count": 1}
+{"type": "request", "request_id": "cmpl-d48b90f5a6244eeaa9017e51bf703aa6-0", "num_computed_blocks": 56, "total_prompt_tokens": 1260, "cached_tokens": 896, "hit_rate": 0.7111111111111111}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056], "count": 1}
+{"type": "request", "request_id": "cmpl-a4aad5a1f4e04cc2a003e6cae4a51548-0", "num_computed_blocks": 78, "total_prompt_tokens": 1414, "cached_tokens": 1248, "hit_rate": 0.8826025459688827}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2066, 2067, 2068, 2069, 2070, 2071, 2072, 2073, 2074, 2075], "count": 1}
+{"type": "request", "request_id": "cmpl-e626953b139d4a3daa2fb2b7cfc1ead5-0", "num_computed_blocks": 88, "total_prompt_tokens": 1580, "cached_tokens": 1408, "hit_rate": 0.8911392405063291}
+{"type": "block_hit", "block_ids": [0, 1920, 1921, 1922, 1923, 1924, 1928, 1929, 1930, 1931, 1932, 1933, 1934, 1935, 1948, 1949, 1950, 1951, 1952, 1953, 1954, 1955, 1956, 1957, 1958, 1959, 1960, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2035, 2036, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2066, 2067, 2068, 2069, 2070, 2071, 2072, 2073, 2074, 2075, 2085, 2086, 2087, 2088, 2089, 2090, 2091, 2092, 2093, 2094], "count": 1}
+{"type": "request", "request_id": "cmpl-2219cdafe6a0476aa39cd2855f888aed-0", "num_computed_blocks": 98, "total_prompt_tokens": 1670, "cached_tokens": 1568, "hit_rate": 0.9389221556886228}
+{"type": "block_hit", "block_ids": [0, 1298], "count": 1}
+{"type": "request", "request_id": "cmpl-f6fa35d9742d43f3a6a5495e6a0beb6a-0", "num_computed_blocks": 2, "total_prompt_tokens": 42, "cached_tokens": 32, "hit_rate": 0.7619047619047619}
+{"type": "block_hit", "block_ids": [0, 1298], "count": 1}
+{"type": "request", "request_id": "cmpl-fc235529aef142ed980b374a70ff636e-0", "num_computed_blocks": 2, "total_prompt_tokens": 219, "cached_tokens": 32, "hit_rate": 0.1461187214611872}
+{"type": "block_hit", "block_ids": [0, 1298, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151], "count": 1}
+{"type": "request", "request_id": "cmpl-bc91c1a4cabb4c1383a586cc2f1b8eba-0", "num_computed_blocks": 13, "total_prompt_tokens": 592, "cached_tokens": 208, "hit_rate": 0.35135135135135137}
+{"type": "block_hit", "block_ids": [0, 1298, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197], "count": 1}
+{"type": "request", "request_id": "cmpl-56045f5c8d444885aa3fd92fbe106eac-0", "num_computed_blocks": 37, "total_prompt_tokens": 792, "cached_tokens": 592, "hit_rate": 0.7474747474747475}
+{"type": "block_hit", "block_ids": [0, 1298, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220], "count": 1}
+{"type": "request", "request_id": "cmpl-c4cfa42dd3024beb85a0d8feda3559a8-0", "num_computed_blocks": 49, "total_prompt_tokens": 1109, "cached_tokens": 784, "hit_rate": 0.7069431920649234}
+{"type": "block_hit", "block_ids": [0, 1298, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220, 2240, 2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250, 2251, 2252, 2253, 2254, 2255, 2256, 2257, 2258, 2259], "count": 1}
+{"type": "request", "request_id": "cmpl-dab32f9cc94245e1b4151ba639a53226-0", "num_computed_blocks": 69, "total_prompt_tokens": 1353, "cached_tokens": 1104, "hit_rate": 0.8159645232815964}
+{"type": "block_hit", "block_ids": [0, 1298, 2141, 2142, 2143, 2144, 2145, 2146, 2147, 2148, 2149, 2150, 2151, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220, 2240, 2241, 2242, 2243, 2244, 2245, 2246, 2247, 2248, 2249, 2250, 2251, 2252, 2253, 2254, 2255, 2256, 2257, 2258, 2259, 2274, 2275, 2276, 2277, 2278, 2279, 2280, 2281, 2282, 2283, 2284, 2285, 2286, 2287, 2288], "count": 1}
+{"type": "request", "request_id": "cmpl-25148ad477dc4c09bfce2eb9ee963c75-0", "num_computed_blocks": 84, "total_prompt_tokens": 1560, "cached_tokens": 1344, "hit_rate": 0.8615384615384616}
+{"type": "block_hit", "block_ids": [0, 1298], "count": 1}
+{"type": "request", "request_id": "cmpl-34d299bcdbaf46a6ac729555bfaeac5d-0", "num_computed_blocks": 2, "total_prompt_tokens": 44, "cached_tokens": 32, "hit_rate": 0.7272727272727273}
+{"type": "block_hit", "block_ids": [0, 1298], "count": 1}
+{"type": "request", "request_id": "cmpl-f337ec033d1b4a619a322ede7c08ff75-0", "num_computed_blocks": 2, "total_prompt_tokens": 301, "cached_tokens": 32, "hit_rate": 0.10631229235880399}
+{"type": "block_hit", "block_ids": [0, 1298, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345], "count": 1}
+{"type": "request", "request_id": "cmpl-ff9091a98f8640a2bca73665409d0fd2-0", "num_computed_blocks": 18, "total_prompt_tokens": 890, "cached_tokens": 288, "hit_rate": 0.3235955056179775}
+{"type": "block_hit", "block_ids": [0, 1298, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2395, 2396, 2397, 2398, 2399, 2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409, 2410, 2411], "count": 1}
+{"type": "request", "request_id": "cmpl-f0f4ec9b0d414e4da2d91f97f8835744-0", "num_computed_blocks": 55, "total_prompt_tokens": 1149, "cached_tokens": 880, "hit_rate": 0.7658833768494343}
+{"type": "block_hit", "block_ids": [0, 1298, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2395, 2396, 2397, 2398, 2399, 2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409, 2410, 2411, 2427, 2428, 2429, 2430, 2431, 2432, 2433, 2434, 2435, 2436, 2437, 2438, 2439, 2440, 2441, 2442], "count": 1}
+{"type": "request", "request_id": "cmpl-1928d578336941eba90b183a81d2e97b-0", "num_computed_blocks": 71, "total_prompt_tokens": 1367, "cached_tokens": 1136, "hit_rate": 0.831016825164594}
+{"type": "block_hit", "block_ids": [0, 1298, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2395, 2396, 2397, 2398, 2399, 2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409, 2410, 2411, 2427, 2428, 2429, 2430, 2431, 2432, 2433, 2434, 2435, 2436, 2437, 2438, 2439, 2440, 2441, 2442, 2454, 2455, 2456, 2457, 2458, 2459, 2460, 2461, 2462, 2463, 2464, 2465, 2466, 2467], "count": 1}
+{"type": "request", "request_id": "cmpl-5fc44814cffd43e697326401b31e8ccd-0", "num_computed_blocks": 85, "total_prompt_tokens": 1526, "cached_tokens": 1360, "hit_rate": 0.891218872870249}
+{"type": "block_hit", "block_ids": [0, 1298, 2330, 2331, 2332, 2333, 2334, 2335, 2336, 2337, 2338, 2339, 2340, 2341, 2342, 2343, 2344, 2345, 2375, 2376, 2377, 2378, 2379, 2380, 2381, 2382, 2383, 2384, 2385, 2386, 2387, 2388, 2389, 2390, 2391, 2392, 2393, 2394, 2395, 2396, 2397, 2398, 2399, 2400, 2401, 2402, 2403, 2404, 2405, 2406, 2407, 2408, 2409, 2410, 2411, 2427, 2428, 2429, 2430, 2431, 2432, 2433, 2434, 2435, 2436, 2437, 2438, 2439, 2440, 2441, 2442, 2454, 2455, 2456, 2457, 2458, 2459, 2460, 2461, 2462, 2463, 2464, 2465, 2466, 2467, 2473, 2474, 2475, 2476, 2477, 2478, 2479, 2480, 2481, 2482], "count": 1}
+{"type": "request", "request_id": "cmpl-c42314fc62fc4faca46bb749ea6ce894-0", "num_computed_blocks": 95, "total_prompt_tokens": 1718, "cached_tokens": 1520, "hit_rate": 0.8847497089639115}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-1096236a40e34afaa60f25f93686bd7b-0", "num_computed_blocks": 1, "total_prompt_tokens": 44, "cached_tokens": 16, "hit_rate": 0.36363636363636365}
+{"type": "block_hit", "block_ids": [0, 2510], "count": 1}
+{"type": "request", "request_id": "cmpl-e0d9c92b7f564f5d84c3a66c81e8b731-0", "num_computed_blocks": 2, "total_prompt_tokens": 193, "cached_tokens": 32, "hit_rate": 0.16580310880829016}
+{"type": "block_hit", "block_ids": [0, 2510, 2519, 2520, 2521, 2522, 2523, 2524, 2525, 2526, 2527, 2528], "count": 1}
+{"type": "request", "request_id": "cmpl-87dbe052928344c6b57b3ed4c87bcb68-0", "num_computed_blocks": 12, "total_prompt_tokens": 227, "cached_tokens": 192, "hit_rate": 0.8458149779735683}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-32fb2b9308a94683870f01a188ad704c-0", "num_computed_blocks": 2, "total_prompt_tokens": 83, "cached_tokens": 32, "hit_rate": 0.3855421686746988}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-96e57e3f236b4d059a840ca237706a27-0", "num_computed_blocks": 1, "total_prompt_tokens": 39, "cached_tokens": 16, "hit_rate": 0.41025641025641024}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-e66247f1a01a4261aea0926d94694c51-0", "num_computed_blocks": 1, "total_prompt_tokens": 48, "cached_tokens": 16, "hit_rate": 0.3333333333333333}
+{"type": "block_hit", "block_ids": [0, 2574, 2575], "count": 1}
+{"type": "request", "request_id": "cmpl-ad3d58c074954b0f898fd75c4949553c-0", "num_computed_blocks": 3, "total_prompt_tokens": 248, "cached_tokens": 48, "hit_rate": 0.1935483870967742}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-65bcd52b39a345f791dc9bb102b09f3d-0", "num_computed_blocks": 1, "total_prompt_tokens": 83, "cached_tokens": 16, "hit_rate": 0.1927710843373494}
+{"type": "block_hit", "block_ids": [0, 2574, 2575, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2589, 2590, 2591, 2592, 2593], "count": 1}
+{"type": "request", "request_id": "cmpl-37f806140bf34346aeaf8e377f172075-0", "num_computed_blocks": 15, "total_prompt_tokens": 691, "cached_tokens": 240, "hit_rate": 0.3473227206946454}
+{"type": "block_hit", "block_ids": [0, 2574, 2575, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2589, 2590, 2591, 2592, 2593, 2663, 2664, 2665, 2666, 2667, 2668, 2669, 2670, 2671, 2672, 2673, 2674, 2675, 2676, 2677, 2678, 2679, 2680, 2681, 2682, 2683, 2684, 2685, 2686, 2687, 2688, 2689, 2690], "count": 1}
+{"type": "request", "request_id": "cmpl-4e41c7dde7f647cc84d64001dd78d3b5-0", "num_computed_blocks": 43, "total_prompt_tokens": 767, "cached_tokens": 688, "hit_rate": 0.8970013037809648}
+{"type": "block_hit", "block_ids": [0, 2568], "count": 1}
+{"type": "request", "request_id": "cmpl-8a8f7aa4469740d8b817c83db5122f6b-0", "num_computed_blocks": 2, "total_prompt_tokens": 722, "cached_tokens": 32, "hit_rate": 0.0443213296398892}
+{"type": "block_hit", "block_ids": [0, 2631, 2632, 2633, 2634], "count": 1}
+{"type": "request", "request_id": "cmpl-238b09e8d61d4fc098549ffbbc48379c-0", "num_computed_blocks": 5, "total_prompt_tokens": 540, "cached_tokens": 80, "hit_rate": 0.14814814814814814}
+{"type": "block_hit", "block_ids": [0, 2574, 2575, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2589, 2590, 2591, 2592, 2593, 2663, 2664, 2665, 2666, 2667, 2668, 2669, 2670, 2671, 2672, 2673, 2674, 2675, 2676, 2677, 2678, 2679, 2680, 2681, 2682, 2683, 2684, 2685, 2686, 2687, 2688, 2689, 2690, 2703, 2704, 2705, 2706], "count": 1}
+{"type": "request", "request_id": "cmpl-937adde90c0f4eb19f42536d240a3b30-0", "num_computed_blocks": 47, "total_prompt_tokens": 1178, "cached_tokens": 752, "hit_rate": 0.6383701188455009}
+{"type": "block_hit", "block_ids": [0, 2568, 2712, 2713, 2714, 2715, 2716, 2717, 2718, 2719, 2720, 2721, 2722, 2723, 2724, 2725, 2726, 2727, 2728, 2729, 2730, 2731, 2732, 2733, 2734, 2735, 2736, 2737, 2738, 2739, 2740, 2741, 2742, 2743, 2744, 2745, 2746, 2747, 2748, 2749, 2750, 2751, 2752, 2753, 2754], "count": 1}
+{"type": "request", "request_id": "cmpl-ce4187cf21264a99a85f04c65129b0de-0", "num_computed_blocks": 45, "total_prompt_tokens": 1338, "cached_tokens": 720, "hit_rate": 0.5381165919282511}
+{"type": "block_hit", "block_ids": [0, 2574, 2575, 2582, 2583, 2584, 2585, 2586, 2587, 2588, 2589, 2590, 2591, 2592, 2593, 2663, 2664, 2665, 2666, 2667, 2668, 2669, 2670, 2671, 2672, 2673, 2674, 2675, 2676, 2677, 2678, 2679, 2680, 2681, 2682, 2683, 2684, 2685, 2686, 2687, 2688, 2689, 2690, 2703, 2704, 2705, 2706, 2852, 2853, 2854, 2855, 2856, 2857, 2858, 2859, 2860, 2861, 2862, 2863, 2864, 2865, 2866, 2867, 2868, 2869, 2870, 2871, 2872, 2873, 2874, 2875, 2876, 2877], "count": 1}
+{"type": "request", "request_id": "cmpl-b4dee5bc43704742a5b2ef6712e853af-0", "num_computed_blocks": 73, "total_prompt_tokens": 1575, "cached_tokens": 1168, "hit_rate": 0.7415873015873016}
+{"type": "block_hit", "block_ids": [0, 810], "count": 1}
+{"type": "request", "request_id": "cmpl-d9411e5e22a04879b487a92b909ade67-0", "num_computed_blocks": 2, "total_prompt_tokens": 55, "cached_tokens": 32, "hit_rate": 0.5818181818181818}
+{"type": "block_hit", "block_ids": [0, 810, 3063], "count": 1}
+{"type": "request", "request_id": "cmpl-a038db7e182d4cbcb2e9452590a4c7c7-0", "num_computed_blocks": 3, "total_prompt_tokens": 196, "cached_tokens": 48, "hit_rate": 0.24489795918367346}
+{"type": "block_hit", "block_ids": [0, 810, 3063, 3071, 3072, 3073, 3074, 3075, 3076, 3077, 3078, 3079], "count": 1}
+{"type": "request", "request_id": "cmpl-08f03622272b498283dae7355ab80ca2-0", "num_computed_blocks": 12, "total_prompt_tokens": 329, "cached_tokens": 192, "hit_rate": 0.5835866261398176}
+{"type": "block_hit", "block_ids": [0, 810, 3063, 3071, 3072, 3073, 3074, 3075, 3076, 3077, 3078, 3079, 3087, 3088, 3089, 3090, 3091, 3092, 3093, 3094], "count": 1}
+{"type": "request", "request_id": "cmpl-e9e6f2f3f5c7415983c138efeb43d2e7-0", "num_computed_blocks": 20, "total_prompt_tokens": 837, "cached_tokens": 320, "hit_rate": 0.3823178016726404}
+{"type": "block_hit", "block_ids": [0, 810, 3063, 3071, 3072, 3073, 3074, 3075, 3076, 3077, 3078, 3079, 3087, 3088, 3089, 3090, 3091, 3092, 3093, 3094, 3125, 3126, 3127, 3128, 3129, 3130, 3131, 3132, 3133, 3134, 3135, 3136, 3137, 3138, 3139, 3140, 3141, 3142, 3143, 3144, 3145, 3146, 3147, 3148, 3149, 3150, 3151, 3152, 3153, 3154, 3155, 3156], "count": 1}
+{"type": "request", "request_id": "cmpl-ec015bb8ed9d4c2d85e8fb407c27b6be-0", "num_computed_blocks": 52, "total_prompt_tokens": 1184, "cached_tokens": 832, "hit_rate": 0.7027027027027027}
+{"type": "block_hit", "block_ids": [0, 810, 3063, 3071, 3072, 3073, 3074, 3075, 3076, 3077, 3078, 3079, 3087, 3088, 3089, 3090, 3091, 3092, 3093, 3094, 3125, 3126, 3127, 3128, 3129, 3130, 3131, 3132, 3133, 3134, 3135, 3136, 3137, 3138, 3139, 3140, 3141, 3142, 3143, 3144, 3145, 3146, 3147, 3148, 3149, 3150, 3151, 3152, 3153, 3154, 3155, 3156, 3177, 3178, 3179, 3180, 3181, 3182, 3183, 3184, 3185, 3186, 3187, 3188, 3189, 3190, 3191, 3192, 3193, 3194, 3195, 3196, 3197, 3198], "count": 1}
+{"type": "request", "request_id": "cmpl-f271c9001ddb42b2a4e58ab1a005778f-0", "num_computed_blocks": 74, "total_prompt_tokens": 1537, "cached_tokens": 1184, "hit_rate": 0.7703318152244633}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-a2315d78d55944b799bd9ebb2fdcfce0-0", "num_computed_blocks": 1, "total_prompt_tokens": 376, "cached_tokens": 16, "hit_rate": 0.0425531914893617}
+{"type": "block_hit", "block_ids": [0, 3266, 3267, 3268, 3269, 3270, 3271, 3272, 3273, 3274, 3275, 3276, 3277, 3278, 3279, 3280, 3281, 3282, 3283, 3284, 3285, 3286, 3287], "count": 1}
+{"type": "request", "request_id": "cmpl-2a3ae406b8364a6bb35d7402e86a9fdf-0", "num_computed_blocks": 23, "total_prompt_tokens": 630, "cached_tokens": 368, "hit_rate": 0.5841269841269842}
+{"type": "block_hit", "block_ids": [0, 3266, 3267, 3268, 3269, 3270, 3271, 3272, 3273, 3274, 3275, 3276, 3277, 3278, 3279, 3280, 3281, 3282, 3283, 3284, 3285, 3286, 3287, 3303, 3304, 3305, 3306, 3307, 3308, 3309, 3310, 3311, 3312, 3313, 3314, 3315, 3316, 3317, 3318], "count": 1}
+{"type": "request", "request_id": "cmpl-1bb5a2808ac648ee96c9d863f4fef3f6-0", "num_computed_blocks": 39, "total_prompt_tokens": 723, "cached_tokens": 624, "hit_rate": 0.8630705394190872}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-f47bfc1104d241cabdf2e6ddd30a9173-0", "num_computed_blocks": 1, "total_prompt_tokens": 106, "cached_tokens": 16, "hit_rate": 0.1509433962264151}
+{"type": "block_hit", "block_ids": [0, 3331], "count": 1}
+{"type": "request", "request_id": "cmpl-71458a7eaf5d4feb87c182759a713eb1-0", "num_computed_blocks": 2, "total_prompt_tokens": 2098, "cached_tokens": 32, "hit_rate": 0.015252621544327931}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-a9033cea3d794755ad3dd7d410a5c687-0", "num_computed_blocks": 1, "total_prompt_tokens": 1093, "cached_tokens": 16, "hit_rate": 0.01463860933211345}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-4c6a97f33a3e455aaa84ec699ba620ef-0", "num_computed_blocks": 1, "total_prompt_tokens": 2615, "cached_tokens": 16, "hit_rate": 0.006118546845124283}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-36134c49d5124314a911f5d55d8552fa-0", "num_computed_blocks": 1, "total_prompt_tokens": 1273, "cached_tokens": 16, "hit_rate": 0.012568735271013355}
+{"type": "block_hit", "block_ids": [0, 3749], "count": 1}
+{"type": "request", "request_id": "cmpl-26d17054fffa4e6cbb556b07433cd7ab-0", "num_computed_blocks": 2, "total_prompt_tokens": 1071, "cached_tokens": 32, "hit_rate": 0.029878618113912233}
+{"type": "block_hit", "block_ids": [0, 3563], "count": 1}
+{"type": "request", "request_id": "cmpl-c2e2c53af27e42bf919d17f47594d247-0", "num_computed_blocks": 2, "total_prompt_tokens": 1848, "cached_tokens": 32, "hit_rate": 0.017316017316017316}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-06c69ae1f5c34779a10aa712895ed1b0-0", "num_computed_blocks": 1, "total_prompt_tokens": 63, "cached_tokens": 16, "hit_rate": 0.25396825396825395}
+{"type": "block_hit", "block_ids": [0, 3563], "count": 1}
+{"type": "request", "request_id": "cmpl-59e77ef3a0634562a5e1000225016073-0", "num_computed_blocks": 2, "total_prompt_tokens": 1850, "cached_tokens": 32, "hit_rate": 0.017297297297297298}
+{"type": "block_hit", "block_ids": [0, 3749], "count": 1}
+{"type": "request", "request_id": "cmpl-57102e5b840149ab8b93c0dcee641ee1-0", "num_computed_blocks": 2, "total_prompt_tokens": 1108, "cached_tokens": 32, "hit_rate": 0.02888086642599278}
+{"type": "block_hit", "block_ids": [0, 3749], "count": 1}
+{"type": "request", "request_id": "cmpl-c116044fe91e467086fcc684e362105d-0", "num_computed_blocks": 2, "total_prompt_tokens": 1005, "cached_tokens": 32, "hit_rate": 0.031840796019900496}
+{"type": "block_hit", "block_ids": [0, 3749], "count": 1}
+{"type": "request", "request_id": "cmpl-42b3b92d8899460ca37972b46227ee77-0", "num_computed_blocks": 2, "total_prompt_tokens": 1101, "cached_tokens": 32, "hit_rate": 0.029064486830154404}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-7f951249668c439d895d7ce54fac0e48-0", "num_computed_blocks": 1, "total_prompt_tokens": 55, "cached_tokens": 16, "hit_rate": 0.2909090909090909}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-e899cd534ca04697a61cc3b7b19692d0-0", "num_computed_blocks": 1, "total_prompt_tokens": 233, "cached_tokens": 16, "hit_rate": 0.06866952789699571}
+{"type": "block_hit", "block_ids": [0, 4424, 4425, 4426, 4427, 4428, 4429, 4430, 4431, 4432, 4433, 4434, 4435, 4436], "count": 1}
+{"type": "request", "request_id": "cmpl-a05feff40be740eb96326ed321c7d28f-0", "num_computed_blocks": 14, "total_prompt_tokens": 515, "cached_tokens": 224, "hit_rate": 0.4349514563106796}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-1e034b62a89a47d099362917459fa716-0", "num_computed_blocks": 1, "total_prompt_tokens": 49, "cached_tokens": 16, "hit_rate": 0.32653061224489793}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-7b14cf2d78ef45e7af0de65535c6bd17-0", "num_computed_blocks": 1, "total_prompt_tokens": 57, "cached_tokens": 16, "hit_rate": 0.2807017543859649}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-4386ff2e3a874e8693ace1d564b73554-0", "num_computed_blocks": 1, "total_prompt_tokens": 51, "cached_tokens": 16, "hit_rate": 0.3137254901960784}
+{"type": "block_hit", "block_ids": [0, 4515, 4516], "count": 1}
+{"type": "request", "request_id": "cmpl-0397f16d2f834ef7affdd89c7adf3ac5-0", "num_computed_blocks": 3, "total_prompt_tokens": 207, "cached_tokens": 48, "hit_rate": 0.2318840579710145}
+{"type": "block_hit", "block_ids": [0, 4515, 4516, 4536, 4537, 4538, 4539, 4540, 4541, 4542, 4543, 4544], "count": 1}
+{"type": "request", "request_id": "cmpl-814dc9b7e1cf42fd8d8643c519748f3b-0", "num_computed_blocks": 12, "total_prompt_tokens": 358, "cached_tokens": 192, "hit_rate": 0.5363128491620112}
+{"type": "block_hit", "block_ids": [0, 4530, 4531], "count": 1}
+{"type": "request", "request_id": "cmpl-15fedff641d3461dbb4feb6f5fdfd6bb-0", "num_computed_blocks": 3, "total_prompt_tokens": 288, "cached_tokens": 48, "hit_rate": 0.16666666666666666}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-aa2ae9bb17994d5286a2fa9435a61b89-0", "num_computed_blocks": 1, "total_prompt_tokens": 66, "cached_tokens": 16, "hit_rate": 0.24242424242424243}
+{"type": "block_hit", "block_ids": [0, 4515, 4516, 4536, 4537, 4538, 4539, 4540, 4541, 4542, 4543, 4544, 4571, 4572, 4573, 4574, 4575, 4576, 4577, 4578, 4579, 4580], "count": 1}
+{"type": "request", "request_id": "cmpl-9fa79470c4cf4e9db533437d79026417-0", "num_computed_blocks": 22, "total_prompt_tokens": 629, "cached_tokens": 352, "hit_rate": 0.5596184419713831}
+{"type": "block_hit", "block_ids": [0, 4530, 4531, 4588, 4589, 4590, 4591, 4592, 4593, 4594, 4595, 4596, 4597, 4598, 4599, 4600, 4601, 4602], "count": 1}
+{"type": "request", "request_id": "cmpl-8b2dd407058c4814a4d4f286c1ed192c-0", "num_computed_blocks": 18, "total_prompt_tokens": 535, "cached_tokens": 288, "hit_rate": 0.5383177570093458}
+{"type": "block_hit", "block_ids": [0, 4515, 4516, 4536, 4537, 4538, 4539, 4540, 4541, 4542, 4543, 4544, 4571, 4572, 4573, 4574, 4575, 4576, 4577, 4578, 4579, 4580, 4635, 4636, 4637, 4638, 4639, 4640, 4641, 4642, 4643, 4644, 4645, 4646, 4647, 4648, 4649, 4650, 4651], "count": 1}
+{"type": "request", "request_id": "cmpl-283c1eee9a1448e6b17ba634b15577cf-0", "num_computed_blocks": 39, "total_prompt_tokens": 800, "cached_tokens": 624, "hit_rate": 0.78}
+{"type": "block_hit", "block_ids": [0, 4530, 4531, 4588, 4589, 4590, 4591, 4592, 4593, 4594, 4595, 4596, 4597, 4598, 4599, 4600, 4601, 4602, 4663, 4664, 4665, 4666, 4667, 4668, 4669, 4670, 4671, 4672, 4673, 4674, 4675, 4676, 4677], "count": 1}
+{"type": "request", "request_id": "cmpl-749af2423f28467996bbc2d204e28886-0", "num_computed_blocks": 33, "total_prompt_tokens": 805, "cached_tokens": 528, "hit_rate": 0.6559006211180124}
+{"type": "block_hit", "block_ids": [0, 4515, 4516, 4536, 4537, 4538, 4539, 4540, 4541, 4542, 4543, 4544, 4571, 4572, 4573, 4574, 4575, 4576, 4577, 4578, 4579, 4580, 4635, 4636, 4637, 4638, 4639, 4640, 4641, 4642, 4643, 4644, 4645, 4646, 4647, 4648, 4649, 4650, 4651, 4697, 4698, 4699, 4700, 4701, 4702, 4703, 4704, 4705, 4706, 4707], "count": 1}
+{"type": "request", "request_id": "cmpl-40317e73e5ab406ea88e7b94f492902c-0", "num_computed_blocks": 50, "total_prompt_tokens": 1025, "cached_tokens": 800, "hit_rate": 0.7804878048780488}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-048dc964d48f4a8e976d86ee3c33c1f7-0", "num_computed_blocks": 1, "total_prompt_tokens": 44, "cached_tokens": 16, "hit_rate": 0.36363636363636365}
+{"type": "block_hit", "block_ids": [0, 4614, 4615, 4616], "count": 1}
+{"type": "request", "request_id": "cmpl-c26f6c5e012443bbba8f93e5b64e415e-0", "num_computed_blocks": 4, "total_prompt_tokens": 708, "cached_tokens": 64, "hit_rate": 0.0903954802259887}
+{"type": "block_hit", "block_ids": [0, 2574], "count": 1}
+{"type": "request", "request_id": "cmpl-3c0a4cc051374a7b978c195a86f61b7d-0", "num_computed_blocks": 2, "total_prompt_tokens": 52, "cached_tokens": 32, "hit_rate": 0.6153846153846154}
+{"type": "block_hit", "block_ids": [0, 4530, 4531, 4588, 4589, 4590, 4591, 4592, 4593, 4594, 4595, 4596, 4597, 4598, 4599, 4600, 4601, 4602, 4663, 4664, 4665, 4666, 4667, 4668, 4669, 4670, 4671, 4672, 4673, 4674, 4675, 4676, 4677, 4737, 4738, 4739, 4740, 4741, 4742, 4743, 4744, 4745, 4746, 4747, 4748, 4749, 4750, 4751, 4752, 4753], "count": 1}
+{"type": "request", "request_id": "cmpl-f06b52ecbbab49d5af94e28385a555f8-0", "num_computed_blocks": 50, "total_prompt_tokens": 1130, "cached_tokens": 800, "hit_rate": 0.7079646017699115}
+{"type": "block_hit", "block_ids": [0, 2574, 4864], "count": 1}
+{"type": "request", "request_id": "cmpl-27ee9fa5cb17420dbfee14ed2254c5e1-0", "num_computed_blocks": 3, "total_prompt_tokens": 218, "cached_tokens": 48, "hit_rate": 0.22018348623853212}
+{"type": "block_hit", "block_ids": [0, 2574, 4864, 4912, 4913, 4914, 4915, 4916, 4917, 4918, 4919, 4920, 4921], "count": 1}
+{"type": "request", "request_id": "cmpl-1ed6841ab297483e9fae56c57924110c-0", "num_computed_blocks": 13, "total_prompt_tokens": 389, "cached_tokens": 208, "hit_rate": 0.5347043701799485}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-0e7bfc39aef34c0fb008e2a7cb7a5ead-0", "num_computed_blocks": 2, "total_prompt_tokens": 60, "cached_tokens": 32, "hit_rate": 0.5333333333333333}
+{"type": "block_hit", "block_ids": [0, 4407], "count": 1}
+{"type": "request", "request_id": "cmpl-3ba40728ea074d12bb2d05c4510863cf-0", "num_computed_blocks": 2, "total_prompt_tokens": 46, "cached_tokens": 32, "hit_rate": 0.6956521739130435}
+{"type": "block_hit", "block_ids": [0, 4407], "count": 1}
+{"type": "request", "request_id": "cmpl-515bb9f7ce1845939e204e8fce3d3ada-0", "num_computed_blocks": 2, "total_prompt_tokens": 233, "cached_tokens": 32, "hit_rate": 0.13733905579399142}
+{"type": "block_hit", "block_ids": [0, 4407, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013], "count": 1}
+{"type": "request", "request_id": "cmpl-efaa75e5e89245e7b3cd54d39ed7fe6b-0", "num_computed_blocks": 14, "total_prompt_tokens": 493, "cached_tokens": 224, "hit_rate": 0.4543610547667343}
+{"type": "block_hit", "block_ids": [0, 4407, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 5039, 5040, 5041, 5042, 5043, 5044], "count": 1}
+{"type": "request", "request_id": "cmpl-dcb74130c6324fbd8af2fba65540e442-0", "num_computed_blocks": 30, "total_prompt_tokens": 768, "cached_tokens": 480, "hit_rate": 0.625}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-dfc1509374124ee18be52b417f516e2b-0", "num_computed_blocks": 1, "total_prompt_tokens": 448, "cached_tokens": 16, "hit_rate": 0.03571428571428571}
+{"type": "block_hit", "block_ids": [0, 4407, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 5039, 5040, 5041, 5042, 5043, 5044, 5062, 5063, 5064, 5065, 5066, 5067, 5068, 5069, 5070, 5071, 5072, 5073, 5074, 5075, 5076, 5077, 5078, 5079], "count": 1}
+{"type": "request", "request_id": "cmpl-9975b7bb22c84164aa4b8bbaa1da91ef-0", "num_computed_blocks": 48, "total_prompt_tokens": 1040, "cached_tokens": 768, "hit_rate": 0.7384615384615385}
+{"type": "block_hit", "block_ids": [0, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114], "count": 1}
+{"type": "request", "request_id": "cmpl-24d2dc7293064986a452354279eafb8f-0", "num_computed_blocks": 28, "total_prompt_tokens": 816, "cached_tokens": 448, "hit_rate": 0.5490196078431373}
+{"type": "block_hit", "block_ids": [0, 4407, 5002, 5003, 5004, 5005, 5006, 5007, 5008, 5009, 5010, 5011, 5012, 5013, 5029, 5030, 5031, 5032, 5033, 5034, 5035, 5036, 5037, 5038, 5039, 5040, 5041, 5042, 5043, 5044, 5062, 5063, 5064, 5065, 5066, 5067, 5068, 5069, 5070, 5071, 5072, 5073, 5074, 5075, 5076, 5077, 5078, 5079, 5133, 5134, 5135, 5136, 5137, 5138, 5139, 5140, 5141, 5142, 5143, 5144, 5145, 5146, 5147, 5148, 5149], "count": 1}
+{"type": "request", "request_id": "cmpl-faf12d7383cb4ed4a9cce294c3e2d8ab-0", "num_computed_blocks": 65, "total_prompt_tokens": 1284, "cached_tokens": 1040, "hit_rate": 0.8099688473520249}
+{"type": "block_hit", "block_ids": [0, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5171, 5172, 5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 5190, 5191, 5192, 5193], "count": 1}
+{"type": "request", "request_id": "cmpl-59f21b9c31024371b0bb55697590b959-0", "num_computed_blocks": 51, "total_prompt_tokens": 1075, "cached_tokens": 816, "hit_rate": 0.7590697674418605}
+{"type": "block_hit", "block_ids": [0, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5171, 5172, 5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 5190, 5191, 5192, 5193, 5215, 5216, 5217, 5218, 5219, 5220, 5221, 5222, 5223, 5224, 5225, 5226, 5227, 5228, 5229, 5230], "count": 1}
+{"type": "request", "request_id": "cmpl-c613f4d2b5c04765a7d147d8a591eec6-0", "num_computed_blocks": 67, "total_prompt_tokens": 1472, "cached_tokens": 1072, "hit_rate": 0.7282608695652174}
+{"type": "block_hit", "block_ids": [0, 5088, 5089, 5090, 5091, 5092, 5093, 5094, 5095, 5096, 5097, 5098, 5099, 5100, 5101, 5102, 5103, 5104, 5105, 5106, 5107, 5108, 5109, 5110, 5111, 5112, 5113, 5114, 5171, 5172, 5173, 5174, 5175, 5176, 5177, 5178, 5179, 5180, 5181, 5182, 5183, 5184, 5185, 5186, 5187, 5188, 5189, 5190, 5191, 5192, 5193, 5215, 5216, 5217, 5218, 5219, 5220, 5221, 5222, 5223, 5224, 5225, 5226, 5227, 5228, 5229, 5230, 5253, 5254, 5255, 5256, 5257, 5258, 5259, 5260, 5261, 5262, 5263, 5264, 5265, 5266, 5267, 5268, 5269, 5270, 5271, 5272, 5273, 5274, 5275, 5276, 5277], "count": 1}
+{"type": "request", "request_id": "cmpl-212c82e3ec9049be8b977212dffdfe58-0", "num_computed_blocks": 92, "total_prompt_tokens": 1772, "cached_tokens": 1472, "hit_rate": 0.8306997742663657}
+{"type": "block_hit", "block_ids": [0, 1], "count": 1}
+{"type": "request", "request_id": "cmpl-8856a202950c40479166f7f62802d0b2-0", "num_computed_blocks": 2, "total_prompt_tokens": 169, "cached_tokens": 32, "hit_rate": 0.1893491124260355}
+{"type": "block_hit", "block_ids": [0, 1, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327], "count": 1}
+{"type": "request", "request_id": "cmpl-c51d897942f0401d955bcca6dab3a10c-0", "num_computed_blocks": 10, "total_prompt_tokens": 431, "cached_tokens": 160, "hit_rate": 0.37122969837587005}
+{"type": "block_hit", "block_ids": [0, 1, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5338, 5339, 5340, 5341, 5342, 5343, 5344, 5345, 5346, 5347, 5348, 5349, 5350, 5351, 5352, 5353], "count": 1}
+{"type": "request", "request_id": "cmpl-bdbafd443fb940a6896bc494dcb16530-0", "num_computed_blocks": 26, "total_prompt_tokens": 579, "cached_tokens": 416, "hit_rate": 0.7184801381692574}
+{"type": "block_hit", "block_ids": [0, 1, 5320, 5321, 5322, 5323, 5324, 5325, 5326, 5327, 5338, 5339, 5340, 5341, 5342, 5343, 5344, 5345, 5346, 5347, 5348, 5349, 5350, 5351, 5352, 5353, 5360, 5361, 5362, 5363, 5364, 5365, 5366, 5367, 5368, 5369], "count": 1}
+{"type": "request", "request_id": "cmpl-a423650219fc42b29e7cc49313d0e776-0", "num_computed_blocks": 36, "total_prompt_tokens": 696, "cached_tokens": 576, "hit_rate": 0.8275862068965517}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-f30a779ffc4b4040821a37bd3cccdeb8-0", "num_computed_blocks": 1, "total_prompt_tokens": 217, "cached_tokens": 16, "hit_rate": 0.07373271889400922}
+{"type": "block_hit", "block_ids": [0, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5396, 5397], "count": 1}
+{"type": "request", "request_id": "cmpl-e6ece5d1d3314403b621fc3a8ffe3ee6-0", "num_computed_blocks": 13, "total_prompt_tokens": 304, "cached_tokens": 208, "hit_rate": 0.6842105263157895}
+{"type": "block_hit", "block_ids": [0, 5386, 5387, 5388, 5389, 5390, 5391, 5392, 5393, 5394, 5395, 5396, 5397, 5403, 5404, 5405, 5406, 5407, 5408], "count": 1}
+{"type": "request", "request_id": "cmpl-15eb44bff7b04fccb455f32246039d1f-0", "num_computed_blocks": 19, "total_prompt_tokens": 345, "cached_tokens": 304, "hit_rate": 0.881159420289855}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-fd94401e31f64573a748516004452e46-0", "num_computed_blocks": 1, "total_prompt_tokens": 45, "cached_tokens": 16, "hit_rate": 0.35555555555555557}
+{"type": "block_hit", "block_ids": [0, 5414], "count": 1}
+{"type": "request", "request_id": "cmpl-4e7921d3b2404949b7d5583f1f5c455e-0", "num_computed_blocks": 2, "total_prompt_tokens": 492, "cached_tokens": 32, "hit_rate": 0.06504065040650407}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-f424742b49e84d10a893c6c6df38f88c-0", "num_computed_blocks": 1, "total_prompt_tokens": 44, "cached_tokens": 16, "hit_rate": 0.36363636363636365}
+{"type": "block_hit", "block_ids": [0, 5495], "count": 1}
+{"type": "request", "request_id": "cmpl-15a0c911d8b74c01a65382b22a4f6cae-0", "num_computed_blocks": 2, "total_prompt_tokens": 129, "cached_tokens": 32, "hit_rate": 0.24806201550387597}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506], "count": 1}
+{"type": "request", "request_id": "cmpl-a591c25ebc1041b48f3af76d808d905b-0", "num_computed_blocks": 8, "total_prompt_tokens": 238, "cached_tokens": 128, "hit_rate": 0.5378151260504201}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517], "count": 1}
+{"type": "request", "request_id": "cmpl-cc79a01ed9e84b26a0ba0e313521d133-0", "num_computed_blocks": 14, "total_prompt_tokens": 567, "cached_tokens": 224, "hit_rate": 0.3950617283950617}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558], "count": 1}
+{"type": "request", "request_id": "cmpl-7a326dacb0034e7f8b7f6b0d8e62bce5-0", "num_computed_blocks": 35, "total_prompt_tokens": 880, "cached_tokens": 560, "hit_rate": 0.6363636363636364}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593, 5594, 5595, 5596], "count": 1}
+{"type": "request", "request_id": "cmpl-b8605200a4294933a5849e5521ef60b2-0", "num_computed_blocks": 55, "total_prompt_tokens": 1015, "cached_tokens": 880, "hit_rate": 0.8669950738916257}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593, 5594, 5595, 5596, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611], "count": 1}
+{"type": "request", "request_id": "cmpl-bdcb13dc1a9c49098f7d791e518c8068-0", "num_computed_blocks": 63, "total_prompt_tokens": 1146, "cached_tokens": 1008, "hit_rate": 0.8795811518324608}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593, 5594, 5595, 5596, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611, 5619, 5620, 5621, 5622, 5623, 5624, 5625, 5626], "count": 1}
+{"type": "request", "request_id": "cmpl-1b33d62b773845698831618cb15b785e-0", "num_computed_blocks": 71, "total_prompt_tokens": 1316, "cached_tokens": 1136, "hit_rate": 0.8632218844984803}
+{"type": "block_hit", "block_ids": [0, 5495, 5501, 5502, 5503, 5504, 5505, 5506, 5512, 5513, 5514, 5515, 5516, 5517, 5538, 5539, 5540, 5541, 5542, 5543, 5544, 5545, 5546, 5547, 5548, 5549, 5550, 5551, 5552, 5553, 5554, 5555, 5556, 5557, 5558, 5577, 5578, 5579, 5580, 5581, 5582, 5583, 5584, 5585, 5586, 5587, 5588, 5589, 5590, 5591, 5592, 5593, 5594, 5595, 5596, 5604, 5605, 5606, 5607, 5608, 5609, 5610, 5611, 5619, 5620, 5621, 5622, 5623, 5624, 5625, 5626, 5637, 5638, 5639, 5640, 5641, 5642, 5643, 5644, 5645, 5646, 5647], "count": 1}
+{"type": "request", "request_id": "cmpl-f3e11ac99cb44f78806b798a57109fe1-0", "num_computed_blocks": 82, "total_prompt_tokens": 1487, "cached_tokens": 1312, "hit_rate": 0.8823133826496301}
+{"type": "block_hit", "block_ids": [0, 1082], "count": 1}
+{"type": "request", "request_id": "cmpl-3115f81dcbfc47b8be9df8f66bd94e17-0", "num_computed_blocks": 2, "total_prompt_tokens": 50, "cached_tokens": 32, "hit_rate": 0.64}
+{"type": "block_hit", "block_ids": [0, 1082, 5679], "count": 1}
+{"type": "request", "request_id": "cmpl-96aa4490308e465da96b7d473c88340a-0", "num_computed_blocks": 3, "total_prompt_tokens": 240, "cached_tokens": 48, "hit_rate": 0.2}
+{"type": "block_hit", "block_ids": [0, 1082, 5679, 5691, 5692, 5693, 5694, 5695, 5696, 5697, 5698, 5699, 5700, 5701, 5702], "count": 1}
+{"type": "request", "request_id": "cmpl-808d0bbe293048f390125fb174900a20-0", "num_computed_blocks": 15, "total_prompt_tokens": 422, "cached_tokens": 240, "hit_rate": 0.5687203791469194}
+{"type": "block_hit", "block_ids": [0, 1082, 5679, 5691, 5692, 5693, 5694, 5695, 5696, 5697, 5698, 5699, 5700, 5701, 5702, 5712, 5713, 5714, 5715, 5716, 5717, 5718, 5719, 5720, 5721, 5722], "count": 1}
+{"type": "request", "request_id": "cmpl-8ada32567fcc45f5a8b7aeb37f8f4e59-0", "num_computed_blocks": 26, "total_prompt_tokens": 747, "cached_tokens": 416, "hit_rate": 0.5568942436412316}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-a619899e058b494385c67aa1bb9fb3bb-0", "num_computed_blocks": 1, "total_prompt_tokens": 79, "cached_tokens": 16, "hit_rate": 0.20253164556962025}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-0dffeea9828642cebc58d00274946570-0", "num_computed_blocks": 1, "total_prompt_tokens": 60, "cached_tokens": 16, "hit_rate": 0.26666666666666666}
+{"type": "block_hit", "block_ids": [0, 5795, 5796], "count": 1}
+{"type": "request", "request_id": "cmpl-47c33bb4f92b4f96935ccbae13e1c153-0", "num_computed_blocks": 3, "total_prompt_tokens": 123, "cached_tokens": 48, "hit_rate": 0.3902439024390244}
+{"type": "block_hit", "block_ids": [0, 5795, 5796, 5799, 5800, 5801, 5802], "count": 1}
+{"type": "request", "request_id": "cmpl-55738e3d37e44de29dde71fd539c43d3-0", "num_computed_blocks": 7, "total_prompt_tokens": 177, "cached_tokens": 112, "hit_rate": 0.632768361581921}
+{"type": "block_hit", "block_ids": [0, 5795, 5796, 5799, 5800, 5801, 5802, 5805, 5806, 5807, 5808], "count": 1}
+{"type": "request", "request_id": "cmpl-6848caa5cd1c4aef8068541e8f8e8eca-0", "num_computed_blocks": 11, "total_prompt_tokens": 247, "cached_tokens": 176, "hit_rate": 0.7125506072874493}
+{"type": "block_hit", "block_ids": [0, 3331], "count": 1}
+{"type": "request", "request_id": "cmpl-4d0d3fae30ac46cf811ef796df0aac11-0", "num_computed_blocks": 2, "total_prompt_tokens": 65, "cached_tokens": 32, "hit_rate": 0.49230769230769234}
+{"type": "block_hit", "block_ids": [0, 3331, 5826, 5827], "count": 1}
+{"type": "request", "request_id": "cmpl-c62083ac455d4c6f870621ee5da52cdc-0", "num_computed_blocks": 4, "total_prompt_tokens": 136, "cached_tokens": 64, "hit_rate": 0.47058823529411764}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-c29c7db7c05a444481fd5369f87d44c8-0", "num_computed_blocks": 1, "total_prompt_tokens": 2411, "cached_tokens": 16, "hit_rate": 0.006636250518457071}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-fa9d76b2f3be46d583260abcf89fb38d-0", "num_computed_blocks": 1, "total_prompt_tokens": 1873, "cached_tokens": 16, "hit_rate": 0.008542445274959957}
+{"type": "block_hit", "block_ids": [0, 5991], "count": 1}
+{"type": "request", "request_id": "cmpl-e0a05533f15c49c289d175902621d77e-0", "num_computed_blocks": 2, "total_prompt_tokens": 2700, "cached_tokens": 32, "hit_rate": 0.011851851851851851}
+{"type": "block_hit", "block_ids": [0, 5414], "count": 1}
+{"type": "request", "request_id": "cmpl-53b10aeec9ff4350b10adb4d9eb3687a-0", "num_computed_blocks": 2, "total_prompt_tokens": 49, "cached_tokens": 32, "hit_rate": 0.6530612244897959}
+{"type": "block_hit", "block_ids": [0, 5414, 6298], "count": 1}
+{"type": "request", "request_id": "cmpl-fd20cd5438524a84bc927abea5ed1a0e-0", "num_computed_blocks": 3, "total_prompt_tokens": 209, "cached_tokens": 48, "hit_rate": 0.22966507177033493}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314], "count": 1}
+{"type": "request", "request_id": "cmpl-f86171a2c22b4fcebc23eb9e25ea11f1-0", "num_computed_blocks": 13, "total_prompt_tokens": 362, "cached_tokens": 208, "hit_rate": 0.574585635359116}
+{"type": "block_hit", "block_ids": [0, 3331], "count": 1}
+{"type": "request", "request_id": "cmpl-2462dc3db45448dc9a3bc868a2d73d22-0", "num_computed_blocks": 2, "total_prompt_tokens": 69, "cached_tokens": 32, "hit_rate": 0.463768115942029}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331], "count": 1}
+{"type": "request", "request_id": "cmpl-b160fcde70a74594bd645b89eb29754f-0", "num_computed_blocks": 22, "total_prompt_tokens": 520, "cached_tokens": 352, "hit_rate": 0.676923076923077}
+{"type": "block_hit", "block_ids": [0, 3331, 6333, 6334], "count": 1}
+{"type": "request", "request_id": "cmpl-389b580255ac4553bb512cb1a5b99338-0", "num_computed_blocks": 4, "total_prompt_tokens": 324, "cached_tokens": 64, "hit_rate": 0.19753086419753085}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6350, 6351, 6352, 6353, 6354, 6355, 6356, 6357, 6358, 6359], "count": 1}
+{"type": "request", "request_id": "cmpl-043ff66ff1534b628bade449d15500ae-0", "num_computed_blocks": 32, "total_prompt_tokens": 686, "cached_tokens": 512, "hit_rate": 0.7463556851311953}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6350, 6351, 6352, 6353, 6354, 6355, 6356, 6357, 6358, 6359, 6393, 6394, 6395, 6396, 6397, 6398, 6399, 6400, 6401, 6402], "count": 1}
+{"type": "request", "request_id": "cmpl-4ba8b8bf7c424f2bbaf5c984a947c3c6-0", "num_computed_blocks": 42, "total_prompt_tokens": 854, "cached_tokens": 672, "hit_rate": 0.7868852459016393}
+{"type": "block_hit", "block_ids": [0, 3331, 6333, 6334, 6367, 6368, 6369, 6370, 6371, 6372, 6373, 6374, 6375, 6376, 6377, 6378, 6379, 6380, 6381, 6382], "count": 1}
+{"type": "request", "request_id": "cmpl-d0179623a7fd4de698b86b43c0557bd9-0", "num_computed_blocks": 20, "total_prompt_tokens": 640, "cached_tokens": 320, "hit_rate": 0.5}
+{"type": "block_hit", "block_ids": [0, 3331, 6333, 6334, 6367, 6368, 6369, 6370, 6371, 6372, 6373, 6374, 6375, 6376, 6377, 6378, 6379, 6380, 6381, 6382, 6436, 6437, 6438, 6439, 6440, 6441, 6442, 6443, 6444, 6445, 6446, 6447, 6448, 6449, 6450, 6451, 6452, 6453, 6454, 6455], "count": 1}
+{"type": "request", "request_id": "cmpl-86dd84d68e4245f9933a3ce9cdd0692d-0", "num_computed_blocks": 40, "total_prompt_tokens": 910, "cached_tokens": 640, "hit_rate": 0.7032967032967034}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6350, 6351, 6352, 6353, 6354, 6355, 6356, 6357, 6358, 6359, 6393, 6394, 6395, 6396, 6397, 6398, 6399, 6400, 6401, 6402, 6422, 6423, 6424, 6425, 6426, 6427, 6428, 6429, 6430, 6431, 6432], "count": 1}
+{"type": "request", "request_id": "cmpl-7b7877b8525c4959bf517da599660e54-0", "num_computed_blocks": 53, "total_prompt_tokens": 1229, "cached_tokens": 848, "hit_rate": 0.6899918633034988}
+{"type": "block_hit", "block_ids": [0, 3331, 6333, 6334, 6367, 6368, 6369, 6370, 6371, 6372, 6373, 6374, 6375, 6376, 6377, 6378, 6379, 6380, 6381, 6382, 6436, 6437, 6438, 6439, 6440, 6441, 6442, 6443, 6444, 6445, 6446, 6447, 6448, 6449, 6450, 6451, 6452, 6453, 6454, 6455, 6474, 6475, 6476, 6477, 6478, 6479, 6480, 6481, 6482, 6483, 6484, 6485, 6486, 6487, 6488, 6489], "count": 1}
+{"type": "request", "request_id": "cmpl-c88a57340e374bef8e7b816e9cca0c22-0", "num_computed_blocks": 56, "total_prompt_tokens": 1110, "cached_tokens": 896, "hit_rate": 0.8072072072072072}
+{"type": "block_hit", "block_ids": [0, 5414, 6298, 6305, 6306, 6307, 6308, 6309, 6310, 6311, 6312, 6313, 6314, 6323, 6324, 6325, 6326, 6327, 6328, 6329, 6330, 6331, 6350, 6351, 6352, 6353, 6354, 6355, 6356, 6357, 6358, 6359, 6393, 6394, 6395, 6396, 6397, 6398, 6399, 6400, 6401, 6402, 6422, 6423, 6424, 6425, 6426, 6427, 6428, 6429, 6430, 6431, 6432, 6510, 6511, 6512, 6513, 6514, 6515, 6516, 6517, 6518, 6519, 6520, 6521, 6522, 6523, 6524, 6525, 6526, 6527, 6528, 6529, 6530, 6531, 6532], "count": 1}
+{"type": "request", "request_id": "cmpl-bf9d15b187164b3b850a6879c73c87d0-0", "num_computed_blocks": 76, "total_prompt_tokens": 1598, "cached_tokens": 1216, "hit_rate": 0.7609511889862328}
+{"type": "block_hit", "block_ids": [0, 3331, 6333, 6334, 6367, 6368, 6369, 6370, 6371, 6372, 6373, 6374, 6375, 6376, 6377, 6378, 6379, 6380, 6381, 6382, 6436, 6437, 6438, 6439, 6440, 6441, 6442, 6443, 6444, 6445, 6446, 6447, 6448, 6449, 6450, 6451, 6452, 6453, 6454, 6455, 6474, 6475, 6476, 6477, 6478, 6479, 6480, 6481, 6482, 6483, 6484, 6485, 6486, 6487, 6488, 6489, 6549, 6550, 6551, 6552, 6553, 6554, 6555, 6556, 6557, 6558, 6559, 6560, 6561], "count": 1}
+{"type": "request", "request_id": "cmpl-acafff61f9564713881eed6912a83956-0", "num_computed_blocks": 69, "total_prompt_tokens": 1263, "cached_tokens": 1104, "hit_rate": 0.8741092636579573}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-3a3d1b2a22a94a259eff6622938b2a61-0", "num_computed_blocks": 2, "total_prompt_tokens": 47, "cached_tokens": 32, "hit_rate": 0.6808510638297872}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-923c8c22498b4edd83eb576a3381c381-0", "num_computed_blocks": 2, "total_prompt_tokens": 167, "cached_tokens": 32, "hit_rate": 0.19161676646706588}
+{"type": "block_hit", "block_ids": [0, 781, 6653, 6654, 6655, 6656, 6657, 6658, 6659, 6660], "count": 1}
+{"type": "request", "request_id": "cmpl-41c7fb06548440519e7975b6f2b4cda9-0", "num_computed_blocks": 10, "total_prompt_tokens": 261, "cached_tokens": 160, "hit_rate": 0.6130268199233716}
+{"type": "block_hit", "block_ids": [0, 781, 6653, 6654, 6655, 6656, 6657, 6658, 6659, 6660, 6664, 6665, 6666, 6667, 6668, 6669], "count": 1}
+{"type": "request", "request_id": "cmpl-3eab67c590cd4a6cbf8361966b51e0a1-0", "num_computed_blocks": 16, "total_prompt_tokens": 857, "cached_tokens": 256, "hit_rate": 0.29871645274212366}
+{"type": "block_hit", "block_ids": [0, 781, 6653, 6654, 6655, 6656, 6657, 6658, 6659, 6660, 6664, 6665, 6666, 6667, 6668, 6669, 6699, 6700, 6701, 6702, 6703, 6704, 6705, 6706, 6707, 6708, 6709, 6710, 6711, 6712, 6713, 6714, 6715, 6716, 6717, 6718, 6719, 6720, 6721, 6722, 6723, 6724, 6725, 6726, 6727, 6728, 6729, 6730, 6731, 6732, 6733, 6734, 6735], "count": 1}
+{"type": "request", "request_id": "cmpl-5989660a05874d43873af83976e346bf-0", "num_computed_blocks": 53, "total_prompt_tokens": 1242, "cached_tokens": 848, "hit_rate": 0.6827697262479872}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-2f43a970663e4988adcd8b7fc726072f-0", "num_computed_blocks": 2, "total_prompt_tokens": 67, "cached_tokens": 32, "hit_rate": 0.47761194029850745}
+{"type": "block_hit", "block_ids": [0, 781, 6788, 6789], "count": 1}
+{"type": "request", "request_id": "cmpl-e2a20d3fb80149dcbbf4b76f1733ddfd-0", "num_computed_blocks": 4, "total_prompt_tokens": 461, "cached_tokens": 64, "hit_rate": 0.13882863340563992}
+{"type": "block_hit", "block_ids": [0, 781, 6788, 6789, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 6820, 6821, 6822, 6823, 6824, 6825, 6826, 6827, 6828, 6829, 6830, 6831, 6832, 6833, 6834, 6835], "count": 1}
+{"type": "request", "request_id": "cmpl-df1124690605493298ce52acdc63de72-0", "num_computed_blocks": 28, "total_prompt_tokens": 813, "cached_tokens": 448, "hit_rate": 0.5510455104551045}
+{"type": "block_hit", "block_ids": [0, 781, 6788, 6789, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 6820, 6821, 6822, 6823, 6824, 6825, 6826, 6827, 6828, 6829, 6830, 6831, 6832, 6833, 6834, 6835, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877], "count": 1}
+{"type": "request", "request_id": "cmpl-8cd2d549362347789a831d898044e24e-0", "num_computed_blocks": 50, "total_prompt_tokens": 1099, "cached_tokens": 800, "hit_rate": 0.7279344858962693}
+{"type": "block_hit", "block_ids": [0, 781, 6788, 6789, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 6820, 6821, 6822, 6823, 6824, 6825, 6826, 6827, 6828, 6829, 6830, 6831, 6832, 6833, 6834, 6835, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6894, 6895, 6896, 6897, 6898, 6899, 6900, 6901, 6902, 6903, 6904, 6905, 6906, 6907, 6908, 6909, 6910, 6911], "count": 1}
+{"type": "request", "request_id": "cmpl-059f60e2eb7749bc9198ea2b64937c52-0", "num_computed_blocks": 68, "total_prompt_tokens": 1195, "cached_tokens": 1088, "hit_rate": 0.9104602510460251}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-77ee085d996441d0bd505a47db2f1423-0", "num_computed_blocks": 1, "total_prompt_tokens": 350, "cached_tokens": 16, "hit_rate": 0.045714285714285714}
+{"type": "block_hit", "block_ids": [0, 781, 6788, 6789, 6812, 6813, 6814, 6815, 6816, 6817, 6818, 6819, 6820, 6821, 6822, 6823, 6824, 6825, 6826, 6827, 6828, 6829, 6830, 6831, 6832, 6833, 6834, 6835, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 6865, 6866, 6867, 6868, 6869, 6870, 6871, 6872, 6873, 6874, 6875, 6876, 6877, 6894, 6895, 6896, 6897, 6898, 6899, 6900, 6901, 6902, 6903, 6904, 6905, 6906, 6907, 6908, 6909, 6910, 6911, 6916, 6917, 6918, 6919, 6920, 6921], "count": 1}
+{"type": "request", "request_id": "cmpl-29e822f2dfe245bf9483b64c604105ab-0", "num_computed_blocks": 74, "total_prompt_tokens": 1386, "cached_tokens": 1184, "hit_rate": 0.8542568542568543}
+{"type": "block_hit", "block_ids": [0, 6930, 6931, 6932, 6933, 6934, 6935, 6936, 6937, 6938, 6939, 6940, 6941, 6942, 6943, 6944, 6945, 6946, 6947, 6948, 6949], "count": 1}
+{"type": "request", "request_id": "cmpl-01b6de0a70da4f2a8bae97c8f884dbb0-0", "num_computed_blocks": 21, "total_prompt_tokens": 592, "cached_tokens": 336, "hit_rate": 0.5675675675675675}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-3cfe2e2d26a847de81e68ab7b2843a43-0", "num_computed_blocks": 1, "total_prompt_tokens": 50, "cached_tokens": 16, "hit_rate": 0.32}
+{"type": "block_hit", "block_ids": [0, 3749], "count": 1}
+{"type": "request", "request_id": "cmpl-820c6373f62647ae92367a7dbf3c2f84-0", "num_computed_blocks": 2, "total_prompt_tokens": 428, "cached_tokens": 32, "hit_rate": 0.07476635514018691}
+{"type": "block_hit", "block_ids": [0, 3749, 7056, 7057, 7058, 7059, 7060, 7061, 7062, 7063, 7064, 7065, 7066, 7067, 7068, 7069, 7070, 7071, 7072, 7073, 7074, 7075, 7076, 7077, 7078, 7079], "count": 1}
+{"type": "request", "request_id": "cmpl-b5828ab7de304ff28bbf0d7f70605654-0", "num_computed_blocks": 26, "total_prompt_tokens": 848, "cached_tokens": 416, "hit_rate": 0.49056603773584906}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-d9195f77842a4ba7a155299812661b50-0", "num_computed_blocks": 1, "total_prompt_tokens": 170, "cached_tokens": 16, "hit_rate": 0.09411764705882353}
+{"type": "block_hit", "block_ids": [0, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219], "count": 1}
+{"type": "request", "request_id": "cmpl-691ce883f868433fb6dfb47f143624ea-0", "num_computed_blocks": 10, "total_prompt_tokens": 270, "cached_tokens": 160, "hit_rate": 0.5925925925925926}
+{"type": "block_hit", "block_ids": [0, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7225, 7226, 7227, 7228, 7229, 7230], "count": 1}
+{"type": "request", "request_id": "cmpl-3a7826302174434381ef8511cfd23f65-0", "num_computed_blocks": 16, "total_prompt_tokens": 366, "cached_tokens": 256, "hit_rate": 0.6994535519125683}
+{"type": "block_hit", "block_ids": [0, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7225, 7226, 7227, 7228, 7229, 7230, 7236, 7237, 7238, 7239, 7240, 7241], "count": 1}
+{"type": "request", "request_id": "cmpl-dbb4c729900a456281aa5071c3a19fcb-0", "num_computed_blocks": 22, "total_prompt_tokens": 435, "cached_tokens": 352, "hit_rate": 0.8091954022988506}
+{"type": "block_hit", "block_ids": [0, 7211, 7212, 7213, 7214, 7215, 7216, 7217, 7218, 7219, 7225, 7226, 7227, 7228, 7229, 7230, 7236, 7237, 7238, 7239, 7240, 7241, 7246, 7247, 7248, 7249, 7250], "count": 1}
+{"type": "request", "request_id": "cmpl-999297c6f9984083b3b2e5f5f9b6b727-0", "num_computed_blocks": 27, "total_prompt_tokens": 505, "cached_tokens": 432, "hit_rate": 0.8554455445544554}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-1c7a2ad09939409c8c330b986befb18f-0", "num_computed_blocks": 1, "total_prompt_tokens": 40, "cached_tokens": 16, "hit_rate": 0.4}
+{"type": "block_hit", "block_ids": [0, 1082], "count": 1}
+{"type": "request", "request_id": "cmpl-8fe1c49ed3734655a38087aac1469fc7-0", "num_computed_blocks": 2, "total_prompt_tokens": 51, "cached_tokens": 32, "hit_rate": 0.6274509803921569}
+{"type": "block_hit", "block_ids": [0, 1082, 7292], "count": 1}
+{"type": "request", "request_id": "cmpl-3ad140b41b264d8d8c9dad4e71b822a9-0", "num_computed_blocks": 3, "total_prompt_tokens": 182, "cached_tokens": 48, "hit_rate": 0.26373626373626374}
+{"type": "block_hit", "block_ids": [0, 1082, 7292, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307], "count": 1}
+{"type": "request", "request_id": "cmpl-55f96b12b7d54cb4a2e64d24622986ec-0", "num_computed_blocks": 11, "total_prompt_tokens": 207, "cached_tokens": 176, "hit_rate": 0.8502415458937198}
+{"type": "block_hit", "block_ids": [0, 1082, 7292, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7309], "count": 1}
+{"type": "request", "request_id": "cmpl-2e2c632517ea4e2994b155952f9cb790-0", "num_computed_blocks": 12, "total_prompt_tokens": 353, "cached_tokens": 192, "hit_rate": 0.5439093484419264}
+{"type": "block_hit", "block_ids": [0, 1082, 7292, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7309, 7319, 7320, 7321, 7322, 7323, 7324, 7325, 7326, 7327, 7328], "count": 1}
+{"type": "request", "request_id": "cmpl-764920ba93984408b86da505baa21ee5-0", "num_computed_blocks": 22, "total_prompt_tokens": 385, "cached_tokens": 352, "hit_rate": 0.9142857142857143}
+{"type": "block_hit", "block_ids": [0, 1082, 7292, 7300, 7301, 7302, 7303, 7304, 7305, 7306, 7307, 7309, 7319, 7320, 7321, 7322, 7323, 7324, 7325, 7326, 7327, 7328, 7329, 7330], "count": 1}
+{"type": "request", "request_id": "cmpl-fa92692dab794b30b81f6559cfadbcb5-0", "num_computed_blocks": 24, "total_prompt_tokens": 534, "cached_tokens": 384, "hit_rate": 0.7191011235955056}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-512c5f1447004d2a9efa500aa38db2e3-0", "num_computed_blocks": 1, "total_prompt_tokens": 79, "cached_tokens": 16, "hit_rate": 0.20253164556962025}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-69abacf70c424cba85df0f71d6bc7710-0", "num_computed_blocks": 1, "total_prompt_tokens": 2023, "cached_tokens": 16, "hit_rate": 0.007909045971329708}
+{"type": "block_hit", "block_ids": [0, 7349, 7350, 7351], "count": 1}
+{"type": "request", "request_id": "cmpl-d49c0b8148214ddaa304e269dc9cc15f-0", "num_computed_blocks": 4, "total_prompt_tokens": 368, "cached_tokens": 64, "hit_rate": 0.17391304347826086}
+{"type": "block_hit", "block_ids": [0, 7349, 7350, 7351, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7518], "count": 1}
+{"type": "request", "request_id": "cmpl-cbf82b5a69644ea19ec0cb3cb37271cb-0", "num_computed_blocks": 23, "total_prompt_tokens": 639, "cached_tokens": 368, "hit_rate": 0.5758998435054773}
+{"type": "block_hit", "block_ids": [0, 7349, 7350, 7351, 7500, 7501, 7502, 7503, 7504, 7505, 7506, 7507, 7508, 7509, 7510, 7511, 7512, 7513, 7514, 7515, 7516, 7517, 7518, 7547, 7548, 7549, 7550, 7551, 7552, 7553, 7554, 7555, 7556, 7557, 7558, 7559, 7560, 7561, 7562], "count": 1}
+{"type": "request", "request_id": "cmpl-d36232d74f9042209a7e19ae924accfd-0", "num_computed_blocks": 39, "total_prompt_tokens": 925, "cached_tokens": 624, "hit_rate": 0.6745945945945946}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-ec902051acd14a82a177b3308126174b-0", "num_computed_blocks": 1, "total_prompt_tokens": 62, "cached_tokens": 16, "hit_rate": 0.25806451612903225}
+{"type": "block_hit", "block_ids": [0, 7616, 7617], "count": 1}
+{"type": "request", "request_id": "cmpl-97f6cd836c0a4b7fa1235c23e0a2c792-0", "num_computed_blocks": 3, "total_prompt_tokens": 496, "cached_tokens": 48, "hit_rate": 0.0967741935483871}
+{"type": "block_hit", "block_ids": [0, 7616, 7617, 7644, 7645, 7646, 7647, 7648, 7649, 7650, 7651, 7652, 7653, 7654, 7655, 7656, 7657, 7658, 7659, 7660, 7661, 7662, 7663, 7664, 7665, 7666, 7667, 7668, 7669, 7670, 7671], "count": 1}
+{"type": "request", "request_id": "cmpl-84c19a1b5d3d42e1a463ee00dd68935f-0", "num_computed_blocks": 31, "total_prompt_tokens": 732, "cached_tokens": 496, "hit_rate": 0.6775956284153005}
+{"type": "block_hit", "block_ids": [0, 7616, 7617, 7644, 7645, 7646, 7647, 7648, 7649, 7650, 7651, 7652, 7653, 7654, 7655, 7656, 7657, 7658, 7659, 7660, 7661, 7662, 7663, 7664, 7665, 7666, 7667, 7668, 7669, 7670, 7671, 7684, 7685, 7686, 7687, 7688, 7689, 7690, 7691, 7692, 7693, 7694, 7695, 7696, 7697], "count": 1}
+{"type": "request", "request_id": "cmpl-f653080a0f5a44a4a748d6eadda7c239-0", "num_computed_blocks": 45, "total_prompt_tokens": 999, "cached_tokens": 720, "hit_rate": 0.7207207207207207}
+{"type": "block_hit", "block_ids": [0, 4614], "count": 1}
+{"type": "request", "request_id": "cmpl-dd162112b1c84328b86de778de7eed55-0", "num_computed_blocks": 2, "total_prompt_tokens": 59, "cached_tokens": 32, "hit_rate": 0.5423728813559322}
+{"type": "block_hit", "block_ids": [0, 4614, 7742], "count": 1}
+{"type": "request", "request_id": "cmpl-d1078ea905da4eb29da96eeaa36163d1-0", "num_computed_blocks": 3, "total_prompt_tokens": 764, "cached_tokens": 48, "hit_rate": 0.06282722513089005}
+{"type": "block_hit", "block_ids": [0, 5991], "count": 1}
+{"type": "request", "request_id": "cmpl-22681769ea9d47ddb90810834884255c-0", "num_computed_blocks": 2, "total_prompt_tokens": 1651, "cached_tokens": 32, "hit_rate": 0.019382192610539067}
+{"type": "block_hit", "block_ids": [0, 5991, 7789, 7790, 7791, 7792, 7793, 7794, 7795, 7796, 7797, 7798, 7799, 7800, 7801, 7802, 7803, 7804, 7805, 7806, 7807, 7808, 7809, 7810, 7811, 7812, 7813, 7814, 7815, 7816, 7817, 7818, 7819, 7820, 7821, 7822, 7823, 7824, 7825, 7826, 7827, 7828, 7829, 7830, 7831, 7832, 7833, 7834, 7835, 7836, 7837, 7838, 7839, 7840, 7841, 7842, 7843, 7844, 7845, 7846, 7847, 7848, 7849, 7850, 7851, 7852, 7853, 7854, 7855, 7856, 7857, 7858, 7859, 7860, 7861, 7862, 7863, 7864, 7865, 7866, 7867, 7868, 7869, 7870, 7871, 7872, 7873, 7874, 7875, 7876, 7877, 7878, 7879, 7880, 7881, 7882, 7883, 7884, 7885, 7886, 7887, 7888, 7889], "count": 1}
+{"type": "request", "request_id": "cmpl-90c7d81aed574d54930194de2c9ae6e7-0", "num_computed_blocks": 103, "total_prompt_tokens": 1775, "cached_tokens": 1648, "hit_rate": 0.9284507042253521}
+{"type": "block_hit", "block_ids": [0, 5991], "count": 1}
+{"type": "request", "request_id": "cmpl-f5bf7489c1ff440caf77ae1b50f5ba6a-0", "num_computed_blocks": 2, "total_prompt_tokens": 1117, "cached_tokens": 32, "hit_rate": 0.02864816472694718}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-419739728e6c469c830b4e7d9274adbe-0", "num_computed_blocks": 1, "total_prompt_tokens": 335, "cached_tokens": 16, "hit_rate": 0.04776119402985075}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-01ab544fca9e4718bc43a96c731c2a1b-0", "num_computed_blocks": 2, "total_prompt_tokens": 85, "cached_tokens": 32, "hit_rate": 0.3764705882352941}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-0bfab3885f6646d2b9a7a6d1ee7b7220-0", "num_computed_blocks": 1, "total_prompt_tokens": 43, "cached_tokens": 16, "hit_rate": 0.37209302325581395}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-d77a58edd3c7462c86b232c2a1299f4b-0", "num_computed_blocks": 2, "total_prompt_tokens": 376, "cached_tokens": 32, "hit_rate": 0.0851063829787234}
+{"type": "block_hit", "block_ids": [0, 781, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064], "count": 1}
+{"type": "request", "request_id": "cmpl-0eb6b8fee1d54eb09e64d378c949abb5-0", "num_computed_blocks": 23, "total_prompt_tokens": 694, "cached_tokens": 368, "hit_rate": 0.5302593659942363}
+{"type": "block_hit", "block_ids": [0, 781, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101], "count": 1}
+{"type": "request", "request_id": "cmpl-fca10e4a8eda48ffaa959bb9401b6eca-0", "num_computed_blocks": 43, "total_prompt_tokens": 1201, "cached_tokens": 688, "hit_rate": 0.5728559533721899}
+{"type": "block_hit", "block_ids": [0, 781, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160], "count": 1}
+{"type": "request", "request_id": "cmpl-52587b3c12f04b72b9b080b1bc989143-0", "num_computed_blocks": 75, "total_prompt_tokens": 1650, "cached_tokens": 1200, "hit_rate": 0.7272727272727273}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-0076834311064014aa64e555d85d071f-0", "num_computed_blocks": 1, "total_prompt_tokens": 55, "cached_tokens": 16, "hit_rate": 0.2909090909090909}
+{"type": "block_hit", "block_ids": [0, 60, 59], "count": 1}
+{"type": "request", "request_id": "cmpl-56995f9094e74d369305306e9dd86372-0", "num_computed_blocks": 3, "total_prompt_tokens": 169, "cached_tokens": 48, "hit_rate": 0.28402366863905326}
+{"type": "block_hit", "block_ids": [0, 781, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8181, 8182, 8183, 8184, 8185, 8186, 8187, 8188, 8189, 8190, 8191, 13, 11, 9, 3, 2, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 12], "count": 1}
+{"type": "request", "request_id": "cmpl-087e515acfa34aa997bdba933602cf57-0", "num_computed_blocks": 103, "total_prompt_tokens": 1973, "cached_tokens": 1648, "hit_rate": 0.8352762290927521}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-379242756c384016ac91757253fe9f92-0", "num_computed_blocks": 1, "total_prompt_tokens": 444, "cached_tokens": 16, "hit_rate": 0.036036036036036036}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99], "count": 1}
+{"type": "request", "request_id": "cmpl-7e3978e86c984dcd85b36c382ffb61c4-0", "num_computed_blocks": 10, "total_prompt_tokens": 309, "cached_tokens": 160, "hit_rate": 0.517799352750809}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99, 206, 205, 204, 203, 202, 201, 200, 199, 198], "count": 1}
+{"type": "request", "request_id": "cmpl-d1a08ce0458842f6b8d05d0d8b946a70-0", "num_computed_blocks": 19, "total_prompt_tokens": 457, "cached_tokens": 304, "hit_rate": 0.6652078774617067}
+{"type": "block_hit", "block_ids": [0, 781, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8082, 8083, 8084, 8085, 8086, 8087, 8088, 8089, 8090, 8091, 8092, 8093, 8094, 8095, 8096, 8097, 8098, 8099, 8100, 8101, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 8152, 8153, 8154, 8155, 8156, 8157, 8158, 8159, 8160, 8181, 8182, 8183, 8184, 8185, 8186, 8187, 8188, 8189, 8190, 8191, 13, 11, 9, 3, 2, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 12, 86, 87, 85, 139, 138, 137, 136, 135, 134, 133, 132, 131, 130, 129, 128, 127, 126, 125, 124, 123], "count": 1}
+{"type": "request", "request_id": "cmpl-8c73566939b748989a5ae1344c4b6bc4-0", "num_computed_blocks": 123, "total_prompt_tokens": 2063, "cached_tokens": 1968, "hit_rate": 0.9539505574406204}
+{"type": "block_hit", "block_ids": [0, 177, 176, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 163, 162, 161, 160, 159, 214, 213, 212, 211, 210, 209, 208], "count": 1}
+{"type": "request", "request_id": "cmpl-be824877ae32495ab26463de5e1527cf-0", "num_computed_blocks": 27, "total_prompt_tokens": 598, "cached_tokens": 432, "hit_rate": 0.7224080267558528}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99, 206, 205, 204, 203, 202, 201, 200, 199, 198, 189, 188, 187, 186, 185, 184, 183, 182, 181], "count": 1}
+{"type": "request", "request_id": "cmpl-e2a1f4cb9ee44a9f853ba21f47771e22-0", "num_computed_blocks": 28, "total_prompt_tokens": 708, "cached_tokens": 448, "hit_rate": 0.632768361581921}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99, 206, 205, 204, 203, 202, 201, 200, 199, 198, 189, 188, 187, 186, 185, 184, 183, 182, 181, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66], "count": 1}
+{"type": "request", "request_id": "cmpl-2fe72e927ed64ff782deccc4bd715b92-0", "num_computed_blocks": 44, "total_prompt_tokens": 830, "cached_tokens": 704, "hit_rate": 0.8481927710843373}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99, 206, 205, 204, 203, 202, 201, 200, 199, 198, 189, 188, 187, 186, 185, 184, 183, 182, 181, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 31, 30, 29, 28, 27, 26, 25], "count": 1}
+{"type": "request", "request_id": "cmpl-19a4736353f2463e990feb44d0bd1eb2-0", "num_computed_blocks": 51, "total_prompt_tokens": 943, "cached_tokens": 816, "hit_rate": 0.865323435843054}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-a4b2a894234340789a52e0d0f048a5f3-0", "num_computed_blocks": 1, "total_prompt_tokens": 37, "cached_tokens": 16, "hit_rate": 0.43243243243243246}
+{"type": "block_hit", "block_ids": [0, 60, 59, 46, 45, 44, 43, 101, 100, 99, 206, 205, 204, 203, 202, 201, 200, 199, 198, 189, 188, 187, 186, 185, 184, 183, 182, 181, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 31, 30, 29, 28, 27, 26, 25, 233, 232, 231, 230, 229, 228, 227], "count": 1}
+{"type": "request", "request_id": "cmpl-913e44770db4456c8a2c8267781cec63-0", "num_computed_blocks": 58, "total_prompt_tokens": 1014, "cached_tokens": 928, "hit_rate": 0.9151873767258383}
+{"type": "block_hit", "block_ids": [0, 177, 176, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 163, 162, 161, 160, 159, 214, 213, 212, 211, 210, 209, 208, 140, 121, 120, 119, 118, 117, 116, 115, 114, 113], "count": 1}
+{"type": "request", "request_id": "cmpl-2da248c0fe714352b7822ab98343e524-0", "num_computed_blocks": 37, "total_prompt_tokens": 1160, "cached_tokens": 592, "hit_rate": 0.5103448275862069}
+{"type": "block_hit", "block_ids": [0, 221], "count": 1}
+{"type": "request", "request_id": "cmpl-99f9c0c75f59468885b771ba4f70520a-0", "num_computed_blocks": 2, "total_prompt_tokens": 224, "cached_tokens": 32, "hit_rate": 0.14285714285714285}
+{"type": "block_hit", "block_ids": [0, 221, 352, 351, 350, 349, 348, 347, 421, 420, 419, 418, 417, 416], "count": 1}
+{"type": "request", "request_id": "cmpl-292bf484d58543809ee673e2502191fe-0", "num_computed_blocks": 14, "total_prompt_tokens": 576, "cached_tokens": 224, "hit_rate": 0.3888888888888889}
+{"type": "block_hit", "block_ids": [0, 177, 176, 175, 174, 173, 172, 171, 170, 169, 168, 167, 166, 165, 164, 163, 162, 161, 160, 159, 214, 213, 212, 211, 210, 209, 208, 140, 121, 120, 119, 118, 117, 116, 115, 114, 113, 324, 323, 322, 321, 320, 319, 318, 317, 316, 315, 314, 313, 312, 311, 310, 309, 308, 307, 306, 305, 304, 370, 369, 368, 367, 366, 365, 364, 363, 362, 361, 360, 359, 358, 357], "count": 1}
+{"type": "request", "request_id": "cmpl-34e8b6aa48bc43aa84e7f63f09175e47-0", "num_computed_blocks": 72, "total_prompt_tokens": 1698, "cached_tokens": 1152, "hit_rate": 0.6784452296819788}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-92899533be7e4c8a86b4654e5fad664f-0", "num_computed_blocks": 1, "total_prompt_tokens": 42, "cached_tokens": 16, "hit_rate": 0.38095238095238093}
+{"type": "block_hit", "block_ids": [0, 221, 352, 351, 350, 349, 348, 347, 421, 420, 419, 418, 417, 416, 461, 460, 459, 458, 457, 456, 455, 454, 453, 452, 451, 450, 449, 448, 447, 446, 445, 444, 443, 442, 441, 440], "count": 1}
+{"type": "request", "request_id": "cmpl-7a171d274da74cc7bc8f08fc55865f3f-0", "num_computed_blocks": 36, "total_prompt_tokens": 811, "cached_tokens": 576, "hit_rate": 0.7102342786683107}
+{"type": "block_hit", "block_ids": [0, 221, 352, 351, 350, 349, 348, 347, 421, 420, 419, 418, 417, 416, 461, 460, 459, 458, 457, 456, 455, 454, 453, 452, 451, 450, 449, 448, 447, 446, 445, 444, 443, 442, 441, 440, 326, 325, 303, 302, 301, 300, 299, 298, 297, 296, 295, 294, 293, 292], "count": 1}
+{"type": "request", "request_id": "cmpl-a5bb8aaa55de468b808f6aaf70d6cbc9-0", "num_computed_blocks": 50, "total_prompt_tokens": 1098, "cached_tokens": 800, "hit_rate": 0.7285974499089253}
+{"type": "block_hit", "block_ids": [0, 330], "count": 1}
+{"type": "request", "request_id": "cmpl-decfa6f0628b44dfb58a1a201f9ff843-0", "num_computed_blocks": 2, "total_prompt_tokens": 538, "cached_tokens": 32, "hit_rate": 0.05947955390334572}
+{"type": "block_hit", "block_ids": [0, 221, 352, 351, 350, 349, 348, 347, 421, 420, 419, 418, 417, 416, 461, 460, 459, 458, 457, 456, 455, 454, 453, 452, 451, 450, 449, 448, 447, 446, 445, 444, 443, 442, 441, 440, 326, 325, 303, 302, 301, 300, 299, 298, 297, 296, 295, 294, 293, 292, 586, 585, 584, 583, 582, 581, 580, 579, 578, 577, 576, 575, 574, 573, 572, 571, 570, 569], "count": 1}
+{"type": "request", "request_id": "cmpl-f13844c52a26426583a5b111d4ab94a9-0", "num_computed_blocks": 68, "total_prompt_tokens": 1404, "cached_tokens": 1088, "hit_rate": 0.7749287749287749}
+{"type": "block_hit", "block_ids": [0, 330, 666, 665, 664, 663, 662, 661, 660, 659, 658, 657, 656, 655, 654, 653, 652, 651, 650, 649, 648, 647, 646, 645, 644, 643, 642, 641, 640, 639, 638, 637, 636], "count": 1}
+{"type": "request", "request_id": "cmpl-67f482a466be4416a35cbbec0a495f13-0", "num_computed_blocks": 33, "total_prompt_tokens": 842, "cached_tokens": 528, "hit_rate": 0.6270783847980997}
+{"type": "block_hit", "block_ids": [0, 330, 666, 665, 664, 663, 662, 661, 660, 659, 658, 657, 656, 655, 654, 653, 652, 651, 650, 649, 648, 647, 646, 645, 644, 643, 642, 641, 640, 639, 638, 637, 636, 545, 544, 543, 542, 541, 540, 539, 538, 537, 536, 535, 534, 533, 532, 531, 530, 529, 528, 527], "count": 1}
+{"type": "request", "request_id": "cmpl-b798f21c84b04753960335abb79e19e3-0", "num_computed_blocks": 52, "total_prompt_tokens": 1037, "cached_tokens": 832, "hit_rate": 0.8023143683702989}
+{"type": "block_hit", "block_ids": [0, 221], "count": 1}
+{"type": "request", "request_id": "cmpl-8737346cc8464183a090004b90ee8556-0", "num_computed_blocks": 2, "total_prompt_tokens": 39, "cached_tokens": 32, "hit_rate": 0.8205128205128205}
+{"type": "block_hit", "block_ids": [0, 221], "count": 1}
+{"type": "request", "request_id": "cmpl-9eb912f0f9f64814b33245b6a9b2fd4c-0", "num_computed_blocks": 2, "total_prompt_tokens": 218, "cached_tokens": 32, "hit_rate": 0.14678899082568808}
+{"type": "block_hit", "block_ids": [0, 221, 760, 759, 758, 757, 756, 755, 754, 753, 752, 751, 750], "count": 1}
+{"type": "request", "request_id": "cmpl-d7137781fea14aa2b1f7529dc49cd40b-0", "num_computed_blocks": 13, "total_prompt_tokens": 738, "cached_tokens": 208, "hit_rate": 0.28184281842818426}
+{"type": "block_hit", "block_ids": [0, 221, 760, 759, 758, 757, 756, 755, 754, 753, 752, 751, 750, 809, 808, 807, 806, 805, 804, 803, 802, 801, 800, 799, 798, 797, 796, 795, 794, 793, 792, 791, 790, 789, 788, 787, 786, 785, 784, 783, 782, 822, 821, 820, 819, 818], "count": 1}
+{"type": "request", "request_id": "cmpl-e10d53bb286e418685725820fd42eec7-0", "num_computed_blocks": 46, "total_prompt_tokens": 1016, "cached_tokens": 736, "hit_rate": 0.7244094488188977}
+{"type": "block_hit", "block_ids": [0, 5795], "count": 1}
+{"type": "request", "request_id": "cmpl-678604c8452f40b387855ef289a8fb01-0", "num_computed_blocks": 2, "total_prompt_tokens": 37, "cached_tokens": 32, "hit_rate": 0.8648648648648649}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-2e2bb7fee81244bfab1e1a89a644ae1a-0", "num_computed_blocks": 2, "total_prompt_tokens": 103, "cached_tokens": 32, "hit_rate": 0.3106796116504854}
+{"type": "block_hit", "block_ids": [0, 1], "count": 1}
+{"type": "request", "request_id": "cmpl-32e796d7d71f460cbee4e6fe056eed98-0", "num_computed_blocks": 2, "total_prompt_tokens": 54, "cached_tokens": 32, "hit_rate": 0.5925925925925926}
+{"type": "block_hit", "block_ids": [0, 1, 947], "count": 1}
+{"type": "request", "request_id": "cmpl-19cf47fc1b2e43eb951864b3919b1ea8-0", "num_computed_blocks": 3, "total_prompt_tokens": 495, "cached_tokens": 48, "hit_rate": 0.09696969696969697}
+{"type": "block_hit", "block_ids": [0, 4530], "count": 1}
+{"type": "request", "request_id": "cmpl-f9d29ebc07844074be160b81bdc0a0ab-0", "num_computed_blocks": 2, "total_prompt_tokens": 43, "cached_tokens": 32, "hit_rate": 0.7441860465116279}
+{"type": "block_hit", "block_ids": [0, 1, 947, 987, 986, 985, 984, 983, 981, 982, 958, 935, 932, 931, 930, 929, 928, 927, 926, 925, 924, 923, 922, 921, 920, 919, 918, 917, 916, 915], "count": 1}
+{"type": "request", "request_id": "cmpl-e989833db69c4097b198fb24f9c3b29d-0", "num_computed_blocks": 30, "total_prompt_tokens": 844, "cached_tokens": 480, "hit_rate": 0.5687203791469194}
+{"type": "block_hit", "block_ids": [0, 1, 947, 987, 986, 985, 984, 983, 981, 982, 958, 935, 932, 931, 930, 929, 928, 927, 926, 925, 924, 923, 922, 921, 920, 919, 918, 917, 916, 915, 868, 867, 866, 865, 864, 863, 834, 833, 832, 831, 830, 829, 828, 827, 826, 825, 824, 823, 811, 1016, 1015, 1014], "count": 1}
+{"type": "request", "request_id": "cmpl-9a8ccb5b988b4acb98776e3dcc7a975b-0", "num_computed_blocks": 52, "total_prompt_tokens": 1044, "cached_tokens": 832, "hit_rate": 0.7969348659003831}
+{"type": "block_hit", "block_ids": [0, 1, 947, 987, 986, 985, 984, 983, 981, 982, 958, 935, 932, 931, 930, 929, 928, 927, 926, 925, 924, 923, 922, 921, 920, 919, 918, 917, 916, 915, 868, 867, 866, 865, 864, 863, 834, 833, 832, 831, 830, 829, 828, 827, 826, 825, 824, 823, 811, 1016, 1015, 1014, 1002, 1001, 1048, 1047, 1046, 1045, 1044, 1043, 1042, 1041, 1040, 1039, 1038], "count": 1}
+{"type": "request", "request_id": "cmpl-13d832bafad04c9286310259bebd8e1c-0", "num_computed_blocks": 65, "total_prompt_tokens": 1319, "cached_tokens": 1040, "hit_rate": 0.7884761182714177}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-5e6bd90ad74749539bde7dbfb162c905-0", "num_computed_blocks": 1, "total_prompt_tokens": 109, "cached_tokens": 16, "hit_rate": 0.14678899082568808}
+{"type": "block_hit", "block_ids": [0, 1116, 1114, 1113, 1197, 1195], "count": 1}
+{"type": "request", "request_id": "cmpl-058d95a6e38348c099d4cb41e821a845-0", "num_computed_blocks": 6, "total_prompt_tokens": 437, "cached_tokens": 96, "hit_rate": 0.21967963386727687}
+{"type": "block_hit", "block_ids": [0, 1116, 1114, 1113, 1197, 1195, 1137, 1135, 1133, 1131, 1129, 1127, 1125, 1123, 1121, 1119, 1117, 1115, 1093, 1092, 1091, 1089, 1087, 1086, 1200, 1198, 1196], "count": 1}
+{"type": "request", "request_id": "cmpl-8b766066b18f4a19a2912645c0209476-0", "num_computed_blocks": 27, "total_prompt_tokens": 711, "cached_tokens": 432, "hit_rate": 0.6075949367088608}
+{"type": "block_hit", "block_ids": [0, 1116, 1114, 1113, 1197, 1195, 1137, 1135, 1133, 1131, 1129, 1127, 1125, 1123, 1121, 1119, 1117, 1115, 1093, 1092, 1091, 1089, 1087, 1086, 1200, 1198, 1196, 1273, 1271, 1269, 1267, 1265, 1263, 1261, 1259, 1258, 1257, 1256, 1255, 1254, 1253, 1252, 1251, 1250], "count": 1}
+{"type": "request", "request_id": "cmpl-2989b2bbc7d44fe9918aef2b5e3363a0-0", "num_computed_blocks": 44, "total_prompt_tokens": 895, "cached_tokens": 704, "hit_rate": 0.7865921787709497}
+{"type": "block_hit", "block_ids": [0, 1116, 1114, 1113, 1197, 1195, 1137, 1135, 1133, 1131, 1129, 1127, 1125, 1123, 1121, 1119, 1117, 1115, 1093, 1092, 1091, 1089, 1087, 1086, 1200, 1198, 1196, 1273, 1271, 1269, 1267, 1265, 1263, 1261, 1259, 1258, 1257, 1256, 1255, 1254, 1253, 1252, 1251, 1250, 1172, 1171, 1170, 1169, 1168, 1167, 1166, 1165, 1164, 1163, 1162], "count": 1}
+{"type": "request", "request_id": "cmpl-96570462a3eb44fd9534fd5dffd922af-0", "num_computed_blocks": 55, "total_prompt_tokens": 1244, "cached_tokens": 880, "hit_rate": 0.707395498392283}
+{"type": "block_hit", "block_ids": [0, 1116, 1114, 1113, 1197, 1195, 1137, 1135, 1133, 1131, 1129, 1127, 1125, 1123, 1121, 1119, 1117, 1115, 1093, 1092, 1091, 1089, 1087, 1086, 1200, 1198, 1196, 1273, 1271, 1269, 1267, 1265, 1263, 1261, 1259, 1258, 1257, 1256, 1255, 1254, 1253, 1252, 1251, 1250, 1172, 1171, 1170, 1169, 1168, 1167, 1166, 1165, 1164, 1163, 1162, 1098, 1097, 1096, 1095, 1094, 1065, 1064, 1063, 1062, 1061, 1060, 1059, 1058, 1057, 1056, 1055, 1054, 1053, 1052, 1051, 1050, 1049], "count": 1}
+{"type": "request", "request_id": "cmpl-e35c33932d0647448eecc7ec2cde0675-0", "num_computed_blocks": 77, "total_prompt_tokens": 1518, "cached_tokens": 1232, "hit_rate": 0.8115942028985508}
+{"type": "block_hit", "block_ids": [0, 4530], "count": 1}
+{"type": "request", "request_id": "cmpl-4a8dddb8430e4497b2536d791f508f27-0", "num_computed_blocks": 2, "total_prompt_tokens": 39, "cached_tokens": 32, "hit_rate": 0.8205128205128205}
+{"type": "block_hit", "block_ids": [0, 4530], "count": 1}
+{"type": "request", "request_id": "cmpl-aa5c1d89b51349b2a1684ad6ae585a3f-0", "num_computed_blocks": 2, "total_prompt_tokens": 266, "cached_tokens": 32, "hit_rate": 0.12030075187969924}
+{"type": "block_hit", "block_ids": [0, 4530, 1229, 1228, 1227, 1226, 1225, 1224, 1223, 1222, 1221, 1220, 1219, 1218, 1217, 1216], "count": 1}
+{"type": "request", "request_id": "cmpl-ac7c733e97794c9ca5207dd32960e5bb-0", "num_computed_blocks": 16, "total_prompt_tokens": 540, "cached_tokens": 256, "hit_rate": 0.4740740740740741}
+{"type": "block_hit", "block_ids": [0, 7616], "count": 1}
+{"type": "request", "request_id": "cmpl-4b9207f49dd24486ad1e87bd6e273297-0", "num_computed_blocks": 2, "total_prompt_tokens": 56, "cached_tokens": 32, "hit_rate": 0.5714285714285714}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-2abc467d49514a538c451853e1dcfb1e-0", "num_computed_blocks": 1, "total_prompt_tokens": 43, "cached_tokens": 16, "hit_rate": 0.37209302325581395}
+{"type": "block_hit", "block_ids": [0, 7616, 1330], "count": 1}
+{"type": "request", "request_id": "cmpl-362e8d74d25046aebdcf3be8945d7a86-0", "num_computed_blocks": 3, "total_prompt_tokens": 400, "cached_tokens": 48, "hit_rate": 0.12}
+{"type": "block_hit", "block_ids": [0, 1360], "count": 1}
+{"type": "request", "request_id": "cmpl-a9882e80537f4988a6cb2d41e1fa7168-0", "num_computed_blocks": 2, "total_prompt_tokens": 490, "cached_tokens": 32, "hit_rate": 0.0653061224489796}
+{"type": "block_hit", "block_ids": [0, 7616, 1330, 1452, 1451, 1450, 1449, 1448, 1447, 1446, 1445, 1444, 1443, 1442, 1441, 1440, 1491, 1490, 1489, 1488, 1487, 1486, 1485, 1484, 1483], "count": 1}
+{"type": "request", "request_id": "cmpl-8a6a0339906543278025be72b229977a-0", "num_computed_blocks": 25, "total_prompt_tokens": 733, "cached_tokens": 400, "hit_rate": 0.5457025920873124}
+{"type": "block_hit", "block_ids": [0, 5414], "count": 1}
+{"type": "request", "request_id": "cmpl-ddd105fbb4cd4d638941cd9b8af77bde-0", "num_computed_blocks": 2, "total_prompt_tokens": 57, "cached_tokens": 32, "hit_rate": 0.5614035087719298}
+{"type": "block_hit", "block_ids": [0, 7616, 1330, 1452, 1451, 1450, 1449, 1448, 1447, 1446, 1445, 1444, 1443, 1442, 1441, 1440, 1491, 1490, 1489, 1488, 1487, 1486, 1485, 1484, 1483, 1460, 1459, 1458, 1457, 1456, 1455, 1439, 1438, 1437, 1436, 1435, 1434, 1433, 1432, 1431, 1430, 1429, 1428, 1427, 1414], "count": 1}
+{"type": "request", "request_id": "cmpl-7e705c0764524ea9b96525cbc97fe815-0", "num_computed_blocks": 45, "total_prompt_tokens": 1028, "cached_tokens": 720, "hit_rate": 0.7003891050583657}
+{"type": "block_hit", "block_ids": [0, 1360, 1523, 1522, 1521, 1520, 1519, 1518, 1517, 1516, 1515, 1514, 1513, 1512, 1511, 1510, 1509, 1508, 1507, 1506, 1505, 1504, 1503, 1502, 1501, 1500, 1499, 1498, 1497, 1496], "count": 1}
+{"type": "request", "request_id": "cmpl-e443721177c344a1af134c92c7df9f3a-0", "num_computed_blocks": 30, "total_prompt_tokens": 982, "cached_tokens": 480, "hit_rate": 0.48879837067209775}
+{"type": "block_hit", "block_ids": [0, 5414, 1383], "count": 1}
+{"type": "request", "request_id": "cmpl-f817359c3c144322943f9e165608f2cf-0", "num_computed_blocks": 3, "total_prompt_tokens": 336, "cached_tokens": 48, "hit_rate": 0.14285714285714285}
+{"type": "block_hit", "block_ids": [0, 7616, 1330, 1452, 1451, 1450, 1449, 1448, 1447, 1446, 1445, 1444, 1443, 1442, 1441, 1440, 1491, 1490, 1489, 1488, 1487, 1486, 1485, 1484, 1483, 1460, 1459, 1458, 1457, 1456, 1455, 1439, 1438, 1437, 1436, 1435, 1434, 1433, 1432, 1431, 1430, 1429, 1428, 1427, 1414, 1322, 1321, 1320, 1319, 1318, 1317, 1316, 1315, 1314, 1313, 1312, 1617, 1615, 1613, 1611, 1609, 1607, 1605, 1603], "count": 1}
+{"type": "request", "request_id": "cmpl-9b6466b7ccfe4378bbfefc7462a33faf-0", "num_computed_blocks": 64, "total_prompt_tokens": 1286, "cached_tokens": 1024, "hit_rate": 0.7962674961119751}
+{"type": "block_hit", "block_ids": [0, 7616, 1330, 1452, 1451, 1450, 1449, 1448, 1447, 1446, 1445, 1444, 1443, 1442, 1441, 1440, 1491, 1490, 1489, 1488, 1487, 1486, 1485, 1484, 1483, 1460, 1459, 1458, 1457, 1456, 1455, 1439, 1438, 1437, 1436, 1435, 1434, 1433, 1432, 1431, 1430, 1429, 1428, 1427, 1414, 1322, 1321, 1320, 1319, 1318, 1317, 1316, 1315, 1314, 1313, 1312, 1617, 1615, 1613, 1611, 1609, 1607, 1605, 1603, 1769, 1767, 1745, 1746, 1744, 1742, 1740, 1738, 1736, 1734, 1732, 1730, 1728, 1726, 1724, 1722], "count": 1}
+{"type": "request", "request_id": "cmpl-de7661f7d395419c825bec7f1f17de12-0", "num_computed_blocks": 80, "total_prompt_tokens": 1656, "cached_tokens": 1280, "hit_rate": 0.7729468599033816}
+{"type": "block_hit", "block_ids": [0, 7616, 1330, 1452, 1451, 1450, 1449, 1448, 1447, 1446, 1445, 1444, 1443, 1442, 1441, 1440, 1491, 1490, 1489, 1488, 1487, 1486, 1485, 1484, 1483, 1460, 1459, 1458, 1457, 1456, 1455, 1439, 1438, 1437, 1436, 1435, 1434, 1433, 1432, 1431, 1430, 1429, 1428, 1427, 1414, 1322, 1321, 1320, 1319, 1318, 1317, 1316, 1315, 1314, 1313, 1312, 1617, 1615, 1613, 1611, 1609, 1607, 1605, 1603, 1769, 1767, 1745, 1746, 1744, 1742, 1740, 1738, 1736, 1734, 1732, 1730, 1728, 1726, 1724, 1722, 1865, 1863, 1861, 1859, 1857, 1855, 1853, 1851, 1849, 1830, 1829, 1828, 1827, 1826, 1825, 1824, 1823, 1822, 1813, 1812, 1811, 1810, 1809], "count": 1}
+{"type": "request", "request_id": "cmpl-7ca6b860f774447e84925aed24f55fb6-0", "num_computed_blocks": 103, "total_prompt_tokens": 1679, "cached_tokens": 1648, "hit_rate": 0.9815366289458011}
+{"type": "block_hit", "block_ids": [0, 7616], "count": 1}
+{"type": "request", "request_id": "cmpl-4d13dd6b458a4eb4b78a74dad9386060-0", "num_computed_blocks": 2, "total_prompt_tokens": 48, "cached_tokens": 32, "hit_rate": 0.6666666666666666}
+{"type": "block_hit", "block_ids": [0, 7616, 1660], "count": 1}
+{"type": "request", "request_id": "cmpl-272537dfba044cfba47c78aeaa8bfba5-0", "num_computed_blocks": 3, "total_prompt_tokens": 291, "cached_tokens": 48, "hit_rate": 0.16494845360824742}
+{"type": "block_hit", "block_ids": [0, 7616, 1660, 1646, 1645, 1644, 1643, 1642, 1641, 1640, 1639, 1638, 1637, 1636, 1635, 1634, 1633, 1632], "count": 1}
+{"type": "request", "request_id": "cmpl-efa5bd547dc1428abdcf881d915f6e61-0", "num_computed_blocks": 18, "total_prompt_tokens": 525, "cached_tokens": 288, "hit_rate": 0.5485714285714286}
+{"type": "block_hit", "block_ids": [0, 7616, 1660, 1646, 1645, 1644, 1643, 1642, 1641, 1640, 1639, 1638, 1637, 1636, 1635, 1634, 1633, 1632, 1918, 1917, 1916, 1915, 1914, 1913, 1912, 1911, 1910, 1909, 1908, 1906, 1907, 1905], "count": 1}
+{"type": "request", "request_id": "cmpl-19b775fe421b43c2950cdcd9a0391d72-0", "num_computed_blocks": 32, "total_prompt_tokens": 788, "cached_tokens": 512, "hit_rate": 0.649746192893401}
+{"type": "block_hit", "block_ids": [0, 7616, 1660, 1646, 1645, 1644, 1643, 1642, 1641, 1640, 1639, 1638, 1637, 1636, 1635, 1634, 1633, 1632, 1918, 1917, 1916, 1915, 1914, 1913, 1912, 1911, 1910, 1909, 1908, 1906, 1907, 1905, 1882, 1881, 1880, 1879, 1878, 1847, 1846, 1845, 1844, 1843, 1842, 1841, 1840, 1839, 1838, 1837, 1836], "count": 1}
+{"type": "request", "request_id": "cmpl-f75a10d0953844328bfb49fa25c03239-0", "num_computed_blocks": 49, "total_prompt_tokens": 1014, "cached_tokens": 784, "hit_rate": 0.7731755424063116}
+{"type": "block_hit", "block_ids": [0, 781], "count": 1}
+{"type": "request", "request_id": "cmpl-6ad6bbe05b944cc9ae5fd5613ddec095-0", "num_computed_blocks": 2, "total_prompt_tokens": 67, "cached_tokens": 32, "hit_rate": 0.47761194029850745}
+{"type": "block_hit", "block_ids": [0, 781, 1692, 1691], "count": 1}
+{"type": "request", "request_id": "cmpl-1c8dae567ffe45f5bec878c38e051411-0", "num_computed_blocks": 4, "total_prompt_tokens": 119, "cached_tokens": 64, "hit_rate": 0.5378151260504201}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-dbdb68ebf9234f68b976e26cf58570bc-0", "num_computed_blocks": 1, "total_prompt_tokens": 39, "cached_tokens": 16, "hit_rate": 0.41025641025641024}
+{"type": "block_hit", "block_ids": [0, 1682], "count": 1}
+{"type": "request", "request_id": "cmpl-ef1f74f936fd4abba49189ea8b7c33c3-0", "num_computed_blocks": 2, "total_prompt_tokens": 247, "cached_tokens": 32, "hit_rate": 0.12955465587044535}
+{"type": "block_hit", "block_ids": [0, 1682, 1947, 1946, 1945, 1944, 1943, 1942, 1941, 1940, 1939, 1938, 1937, 1936, 1968], "count": 1}
+{"type": "request", "request_id": "cmpl-1da5a89f938b47e5b8872de9b2302512-0", "num_computed_blocks": 15, "total_prompt_tokens": 831, "cached_tokens": 240, "hit_rate": 0.2888086642599278}
+{"type": "block_hit", "block_ids": [0, 1682, 1947, 1946, 1945, 1944, 1943, 1942, 1941, 1940, 1939, 1938, 1937, 1936, 1968, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2065, 2064, 2063, 2062, 2061, 2060, 2059, 2058, 2057, 2084, 2083, 2082, 2081, 2080, 2079, 2078, 2077, 2076, 2099, 2098, 2097, 2096, 2095, 2130, 2129, 2128, 2127], "count": 1}
+{"type": "request", "request_id": "cmpl-2e228c0ee5d2454c808fb5c151ce957b-0", "num_computed_blocks": 51, "total_prompt_tokens": 1182, "cached_tokens": 816, "hit_rate": 0.6903553299492385}
+{"type": "block_hit", "block_ids": [0, 1682, 1947, 1946, 1945, 1944, 1943, 1942, 1941, 1940, 1939, 1938, 1937, 1936, 1968, 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015, 2014, 2065, 2064, 2063, 2062, 2061, 2060, 2059, 2058, 2057, 2084, 2083, 2082, 2081, 2080, 2079, 2078, 2077, 2076, 2099, 2098, 2097, 2096, 2095, 2130, 2129, 2128, 2127, 2105, 2104, 2103, 2102, 2101, 2100, 2094, 2093, 2092, 2091, 2090, 2089, 2088, 2087, 2086, 2085, 2075, 2074, 2073, 2072, 2071, 2070], "count": 1}
+{"type": "request", "request_id": "cmpl-47f2baa47a024d44aec08718972cf9a3-0", "num_computed_blocks": 73, "total_prompt_tokens": 1707, "cached_tokens": 1168, "hit_rate": 0.6842413591095489}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-8e44600144a441d6afbd240f3480dd81-0", "num_computed_blocks": 1, "total_prompt_tokens": 47, "cached_tokens": 16, "hit_rate": 0.3404255319148936}
+{"type": "block_hit", "block_ids": [0, 810], "count": 1}
+{"type": "request", "request_id": "cmpl-72d21e8e2a824d9696f32bd1bd104574-0", "num_computed_blocks": 2, "total_prompt_tokens": 43, "cached_tokens": 32, "hit_rate": 0.7441860465116279}
+{"type": "block_hit", "block_ids": [0, 810], "count": 1}
+{"type": "request", "request_id": "cmpl-2b476ad8b767451b8075b818f4c4e6ca-0", "num_computed_blocks": 2, "total_prompt_tokens": 289, "cached_tokens": 32, "hit_rate": 0.11072664359861592}
+{"type": "block_hit", "block_ids": [0, 810], "count": 1}
+{"type": "request", "request_id": "cmpl-58bb58c4b057436c8179120510f55bca-0", "num_computed_blocks": 2, "total_prompt_tokens": 57, "cached_tokens": 32, "hit_rate": 0.5614035087719298}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-fb575547eff64d8b9e73dd3387f37c57-0", "num_computed_blocks": 1, "total_prompt_tokens": 70, "cached_tokens": 16, "hit_rate": 0.22857142857142856}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281], "count": 1}
+{"type": "request", "request_id": "cmpl-925da51f778c4889869f489bb9e6d165-0", "num_computed_blocks": 4, "total_prompt_tokens": 231, "cached_tokens": 64, "hit_rate": 0.27705627705627706}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249], "count": 1}
+{"type": "request", "request_id": "cmpl-be99e4cd758c41c7a194d0a10e164da0-0", "num_computed_blocks": 14, "total_prompt_tokens": 368, "cached_tokens": 224, "hit_rate": 0.6086956521739131}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214], "count": 1}
+{"type": "request", "request_id": "cmpl-ecee7c1236b44e71992fb34f74e835ba-0", "num_computed_blocks": 23, "total_prompt_tokens": 531, "cached_tokens": 368, "hit_rate": 0.6930320150659134}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185], "count": 1}
+{"type": "request", "request_id": "cmpl-9c5a9c0fb39349368d590e80f3c43499-0", "num_computed_blocks": 33, "total_prompt_tokens": 686, "cached_tokens": 528, "hit_rate": 0.7696793002915452}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148], "count": 1}
+{"type": "request", "request_id": "cmpl-06ce4acef7dc41f699afc43abca95cea-0", "num_computed_blocks": 42, "total_prompt_tokens": 841, "cached_tokens": 672, "hit_rate": 0.7990487514863258}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148, 2328, 2327, 2326, 2325, 2324, 2323, 2322, 2321, 2320, 2374], "count": 1}
+{"type": "request", "request_id": "cmpl-c909cf5562f94fddba7af6985f1235c9-0", "num_computed_blocks": 52, "total_prompt_tokens": 957, "cached_tokens": 832, "hit_rate": 0.8693834900731452}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148, 2328, 2327, 2326, 2325, 2324, 2323, 2322, 2321, 2320, 2374, 2367, 2366, 2365, 2364, 2363, 2362, 2361], "count": 1}
+{"type": "request", "request_id": "cmpl-2678e52412434051b013eb9e1811d54d-0", "num_computed_blocks": 59, "total_prompt_tokens": 1143, "cached_tokens": 944, "hit_rate": 0.8258967629046369}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148, 2328, 2327, 2326, 2325, 2324, 2323, 2322, 2321, 2320, 2374, 2367, 2366, 2365, 2364, 2363, 2362, 2361, 2354, 2353, 2352, 2351, 2350, 2349, 2348, 2347, 2346, 2426, 2425, 2424], "count": 1}
+{"type": "request", "request_id": "cmpl-d4aa2961424644ba9a55ed909d9da943-0", "num_computed_blocks": 71, "total_prompt_tokens": 1345, "cached_tokens": 1136, "hit_rate": 0.8446096654275093}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148, 2328, 2327, 2326, 2325, 2324, 2323, 2322, 2321, 2320, 2374, 2367, 2366, 2365, 2364, 2363, 2362, 2361, 2354, 2353, 2352, 2351, 2350, 2349, 2348, 2347, 2346, 2426, 2425, 2424, 2412, 2453, 2452, 2451, 2450, 2449, 2448, 2447, 2446, 2445, 2444, 2443, 2472], "count": 1}
+{"type": "request", "request_id": "cmpl-a4ea8ea8e6f14d38a05b1519ebda9724-0", "num_computed_blocks": 84, "total_prompt_tokens": 1529, "cached_tokens": 1344, "hit_rate": 0.8790058862001308}
+{"type": "block_hit", "block_ids": [0, 2283, 2282, 2281, 2258, 2257, 2256, 2255, 2254, 2253, 2252, 2251, 2250, 2249, 2241, 2240, 2220, 2219, 2218, 2217, 2216, 2215, 2214, 2194, 2193, 2192, 2191, 2190, 2189, 2188, 2187, 2186, 2185, 2178, 2177, 2176, 2175, 2174, 2151, 2150, 2149, 2148, 2328, 2327, 2326, 2325, 2324, 2323, 2322, 2321, 2320, 2374, 2367, 2366, 2365, 2364, 2363, 2362, 2361, 2354, 2353, 2352, 2351, 2350, 2349, 2348, 2347, 2346, 2426, 2425, 2424, 2412, 2453, 2452, 2451, 2450, 2449, 2448, 2447, 2446, 2445, 2444, 2443, 2472, 2485, 2484, 2483, 2509, 2508, 2507, 2506, 2505, 2504, 2503, 2502], "count": 1}
+{"type": "request", "request_id": "cmpl-b9a18e75aaa24277bd7fabdccb55ccdd-0", "num_computed_blocks": 95, "total_prompt_tokens": 1812, "cached_tokens": 1520, "hit_rate": 0.8388520971302428}
+{"type": "block_hit", "block_ids": [0], "count": 1}
+{"type": "request", "request_id": "cmpl-775b622666724957a1fc64cafb5a63e0-0", "num_computed_blocks": 1, "total_prompt_tokens": 54, "cached_tokens": 16, "hit_rate": 0.2962962962962963}
