@@ -405,8 +405,8 @@ class LLMEngine:
             ))
 
         self.seq_id_to_seq_group: Dict[str, SequenceGroupBase] = {}
-
-        self.simulator = Simulator()
+        # Simulator for bypassing GPU execution.
+        self.simulator = Simulator(self.tokenizer)
         logger.info("Simulator mode enabled: GPU execution will be bypassed.")
 
     def _initialize_kv_caches(self) -> None:
@@ -1366,6 +1366,9 @@ class LLMEngine:
         assert seq_group_metadata_list is not None
         assert scheduler_outputs is not None
 
+        # if seq_group_metadata_list:
+        #     self.prefix_analyzer.record_iteration(seq_group_metadata_list)
+
         if not scheduler_outputs.is_empty():
 
             # Check if we have a cached last_output from the previous iteration.
@@ -1391,10 +1394,10 @@ class LLMEngine:
                 execute_model_req.async_callback = self.async_callbacks[
                     virtual_engine]
 
+            # Simulator mode: bypass GPU execution
+            outputs = self.simulator.step(scheduler_outputs)
             # outputs = self.model_executor.execute_model(
             #     execute_model_req=execute_model_req)
-            
-            outputs = self.simulator.step(scheduler_outputs)
 
             # We need to do this here so that last step's sampled_token_ids can
             # be passed to the next iteration for PP.

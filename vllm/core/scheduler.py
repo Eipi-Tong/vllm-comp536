@@ -332,7 +332,7 @@ class Scheduler:
         self.scheduler_config = scheduler_config
         self.cache_config = cache_config
 
-        # Milestone 1: Mock GPU memory for Simulation
+        ## Milestone 1: Mock GPU memory for Simulation
         # Even if we are on CPU (which provides many blocks), we overwrite it
         # to simulate a specific GPU size (e.g., 1024 blocks).
         
@@ -1300,12 +1300,145 @@ class Scheduler:
     def schedule(
             self
     ) -> Tuple[List[SequenceGroupMetadata], SchedulerOutputs, bool]:
+        # --- DEBUG CHECK ---
+        # Only print this once (or infrequently) to avoid spamming
+        # Using a simple static counter or similar mechanism
+        if not hasattr(self, "_debug_printed_cache_config"):
+            logger.info(f"[DEBUG] Prefix Caching Enabled: {self.cache_config.enable_prefix_caching}")
+            logger.info(f"[DEBUG] Block Size: {self.cache_config.block_size}")
+            self._debug_printed_cache_config = True
+        # -------------------
         # Schedule sequence groups.
         # This function call changes the internal states of the scheduler
         # such as self.running, self.swapped, and self.waiting.
         scheduler_start_time = time.perf_counter()
 
         scheduler_outputs: SchedulerOutputs = self._schedule()
+        
+        # ----------------- IMPROVED INSTRUMENTATION FOR M2 -----------------
+        # Goal:
+        # 1. Collect per-request prefix hit statistics in prefill phase.
+        # 2. Do not break scheduling flow even if metrics fail.
+        # 3. Store metrics in a global structure for later summary.
+
+        if scheduler_outputs.scheduled_seq_groups:
+            try:
+                for scheduled_group in scheduler_outputs.scheduled_seq_groups:
+                    seq_group = scheduled_group.seq_group
+
+                    # Cache sequences once
+                    seqs = seq_group.get_seqs()
+                    if not seqs:
+                        continue  
+                    
+                    first_seq = seqs[0]
+                    req_id = seq_group.request_id
+
+                    # Only instrument PREFILL phase (prompt processing)
+                    if seq_group.is_prefill():
+                        # ---- BLOCK SHARING INFORMATION ----
+                        computed_blocks = self.block_manager.get_common_computed_block_ids(seqs)
+                        num_computed_blocks = len(computed_blocks)
+
+                        # Prompt information
+                        total_tokens = first_seq.get_prompt_len()
+                        block_size = self.cache_config.block_size
+
+                        # Theoretical matched tokens
+                        cached_tokens = num_computed_blocks * block_size
+                        cached_tokens = min(cached_tokens, total_tokens)  # clamp
+
+                        hit_rate = cached_tokens / total_tokens if total_tokens > 0 else 0.0
+
+                        # ---- LOGGING ----
+                        if num_computed_blocks > 0:
+                            logger.info(
+                                f"[Metrics] Req {req_id}: Prefix Hit "
+                                f"{cached_tokens}/{total_tokens} tokens "
+                                f"({hit_rate*100:.1f}%), "
+                                f"{num_computed_blocks} blocks shared."
+                            )
+                        else:
+                            logger.info(
+                                f"[Metrics] Req {req_id}: Cold Start (no shared blocks)."
+                            )
+
+                        # ---- SAVE TO METRICS DICT ----
+                        # self.metrics is a dict you maintain inside LLMEngine
+                        if not hasattr(self, "metrics"):
+                            self.metrics = {"requests": {}}
+
+                        self.metrics["requests"][req_id] = {
+                            "num_computed_blocks": num_computed_blocks,
+                            "total_prompt_tokens": total_tokens,
+                            "cached_tokens": cached_tokens,
+                            "hit_rate": float(hit_rate),
+                        }
+
+                        import json
+
+                        # Record block reuse in the same JSONL file
+                        if computed_blocks:
+                            blk_record = {
+                                "type": "block_hit",
+                                "block_ids": computed_blocks,
+                                "count": 1  # every reuse increments these blocks once
+                            }
+                            with open("metrics.jsonl", "a") as f:
+                                f.write(json.dumps(blk_record) + "\n")
+                    
+                        record = {
+                            "type": "request",
+                            "request_id": req_id,
+                            "num_computed_blocks": num_computed_blocks,
+                            "total_prompt_tokens": total_tokens,
+                            "cached_tokens": cached_tokens,
+                            "hit_rate": float(hit_rate),
+                        }
+
+                        with open("metrics.jsonl", "a") as f:
+                            f.write(json.dumps(record) + "\n")
+
+                    # Future extension: add decode-phase tracking here
+                    # else:
+                    #     ...
+
+            except Exception as e:
+                logger.warning(f"[Metrics] Error calculating prefix stats: {e}")
+        # -------------------------------------------------------------------
+
+        # # Track which blocks are reused the most
+        # if not hasattr(self, "block_hit_counter"):
+        #     from collections import Counter
+        #     self.block_hit_counter = Counter()
+
+        # for blk in computed_blocks:
+        #     self.block_hit_counter[blk] += 1
+
+        # most_common_hits = self.block_hit_counter.most_common()
+        # max_count = most_common_hits[0][1]
+        # top_blocks = [blk for blk, cnt in most_common_hits if cnt == max_count]
+
+        # from numpy import np
+        # import json
+        # reqs = list(self.metrics["requests"].values())
+        # hit_rates = np.array([r["hit_rate"] for r in reqs])
+
+        # summary = {
+        #     "total_requests": len(reqs),
+        #     "avg_hit_rate": float(hit_rates.mean()),
+        #     "min_hit_rate": float(hit_rates.min()),
+        #     "max_hit_rate": float(hit_rates.max()),
+        #     "std_hit_rate": float(hit_rates.std()),
+        #     "block_hit_analysis": {
+        #         "max_block_hit_count": max_count,
+        #         "block_ids_with_max_hits": top_blocks
+        #     }
+        # }
+
+        # with open("metrics_summary.json", "w") as f:
+        #     json.dump(summary, f, indent=2)
+
         now = time.time()
 
         if not self.cache_config.enable_prefix_caching:
@@ -1351,6 +1484,8 @@ class Scheduler:
                 self.block_manager.access_all_blocks_in_seq(seq, now)
 
             if self.cache_config.enable_prefix_caching:
+                # Can record the block_nums here because only prefill seqs are allowed
+                # to use prefix caching.
                 common_computed_block_nums = (
                     self.block_manager.get_common_computed_block_ids(
                         seq_group.get_seqs(status=SequenceStatus.RUNNING)))
