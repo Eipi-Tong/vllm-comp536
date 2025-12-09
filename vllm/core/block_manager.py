@@ -1,4 +1,5 @@
 """A block manager that manages token blocks."""
+import os
 from typing import Dict, List, Optional
 from typing import Sequence as GenericSequence
 from typing import Tuple
@@ -88,6 +89,11 @@ class SelfAttnBlockSpaceManager(BlockSpaceManager):
 
         self.enable_caching = enable_caching
 
+        policy = os.getenv("VLLM_EVICTION_POLICY", "lru").lower()
+        if policy not in ("lru", "fifo", "lfu"):
+           policy = "lru"
+        self.eviction_policy = policy
+
         self.watermark_blocks = int(watermark * num_gpu_blocks)
 
         self.block_allocator = CpuGpuBlockAllocator.create(
@@ -95,6 +101,7 @@ class SelfAttnBlockSpaceManager(BlockSpaceManager):
             num_gpu_blocks=num_gpu_blocks,
             num_cpu_blocks=num_cpu_blocks,
             block_size=block_size,
+            eviction_policy=self.eviction_policy,
         )
 
         self.block_tables: Dict[SeqId, BlockTable] = {}
@@ -103,7 +110,9 @@ class SelfAttnBlockSpaceManager(BlockSpaceManager):
         self._computed_blocks_tracker = ComputedBlocksTracker(
             self.block_allocator, self.block_size, self.enable_caching)
         self._last_access_blocks_tracker = LastAccessBlocksTracker(
-            self.block_allocator)
+            self.block_allocator,
+           eviction_policy=self.eviction_policy,
+        )
 
     def can_allocate(self,
                      seq_group: SequenceGroup,

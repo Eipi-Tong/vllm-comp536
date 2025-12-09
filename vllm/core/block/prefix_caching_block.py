@@ -13,6 +13,7 @@ from vllm.core.block.naive_block import (BlockPool, NaiveBlock,
                                          NaiveBlockAllocator)
 from vllm.core.evictor import EvictionPolicy, Evictor, make_evictor
 from vllm.sequence import Sequence
+from vllm.core.evictor import EvictionPolicy, make_evictor
 
 PrefixHash = int
 
@@ -309,27 +310,37 @@ class PrefixCachingBlockAllocator(BlockAllocator):
             return None
 
     def _maybe_allocate_evicted_block_id(self) -> Optional[BlockId]:
-        if self.evictor.num_blocks == 0:
-            return None
+        # Keep trying candidates from the evictor until we find a consistent one
+        # or run out of blocks to evict.
+        while self.evictor.num_blocks > 0:
+            block_id, content_hash_to_evict = self.evictor.evict()
 
-        # Here we get an evicted block, which is only added
-        # into evictor if its ref counter is 0
-        # and since its content would be changed, we need
-        # to remove it from _cached_blocks's tracking list
-        block_id, content_hash_to_evict = self.evictor.evict()
+            # Look up the cached block id for this content hash.
+            cached_block_id = self._cached_blocks.get(content_hash_to_evict)
+            if cached_block_id is None:
+                # Stale: evictor returned a content hash we no longer track.
+                # Skip this candidate and try the next one.
+                continue
 
-        # Sanity checks
-        assert content_hash_to_evict in self._cached_blocks
-        _block_id = self._cached_blocks[content_hash_to_evict]
-        assert self._refcounter.get(_block_id) == 0
-        assert _block_id == block_id
+            if cached_block_id != block_id:
+                # Stale/inconsistent mapping: the content hash points to a
+                # different block than what the evictor suggests. Skip it.
+                continue
 
-        self._cached_blocks.pop(content_hash_to_evict)
+            # The block must be free (refcount == 0) to be reused.
+            if self._refcounter.get(cached_block_id) != 0:
+                # Inconsistent state for eviction; skip this candidate.
+                continue
 
-        self._refcounter.incr(block_id)
-        self._track_block_id(block_id, computed=False)
+            # At this point, (block_id, content_hash_to_evict) is consistent
+            # with our cached_blocks and refcounter; we can safely reuse it.
+            self._cached_blocks.pop(content_hash_to_evict, None)
+            self._refcounter.incr(block_id)
+            self._track_block_id(block_id, computed=False)
+            return block_id
 
-        return block_id
+        # No valid evictable block found.
+        return None
 
     def _free_block_id(self, block: Block) -> None:
         """Decrements the refcount of the block. The block may be in two 
@@ -1025,8 +1036,9 @@ class LastAccessBlocksTracker:
     an efficient update of allocator's block last access times
     """
 
-    def __init__(self, allocator):
+    def __init__(self, allocator, eviction_policy: str = "lru"):
         self._allocator = allocator
+        self._eviction_policy = eviction_policy
         self._seq_last_access: Dict[int, Optional[float]] = {}
 
     def add_seq(self, seq_id: int) -> None:
