@@ -25,6 +25,7 @@ import json
 import time
 import numpy as np
 import aiohttp
+import os
 from typing import List, Dict, Any
 from transformers import AutoTokenizer
 
@@ -41,6 +42,9 @@ class ShareGPTClient:
         self.rate = rate
         print(f"Loading tokenizer: {tokenizer_name}...")
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+        self.metrics_path = os.getenv("CLIENT_METRICS_PATH", "client_metrics.jsonl")
+        # Clear old metrics file on each run
+        open(self.metrics_path, "w").close()
 
     def apply_template(self, messages: List[Dict[str, str]]) -> str:
         return self.tokenizer.apply_chat_template(
@@ -57,11 +61,24 @@ class ShareGPTClient:
         try:
             start_time = time.time()
             async with session.post(self.api_url, json=payload) as response:
+                latency = time.time() - start_time
+
                 if response.status == 200:
                     resp_json = await response.json()
-                    latency = time.time() - start_time
-                    # Return the generated text so we can append it to history
                     output_text = resp_json['choices'][0]['text']
+
+                    record = {
+                        "request_id": request_id,
+                        "latency": latency,   # approx TTFT since we don’t stream
+                        "prompt_len_chars": len(prompt),
+                        "output_len_chars": len(output_text),
+                        "workload": os.getenv("WORKLOAD_NAME", "agentbank-apps"),
+                        "multi_turn": self.rate is not None,  # crude flag; or pass in explicitly
+                        "timestamp": time.time(),
+                    }
+                    with open(self.metrics_path, "a") as f:
+                        f.write(json.dumps(record) + "\n")
+
                     return output_text, latency
                 else:
                     print(f"[Error] Req {request_id} failed: {response.status}")
@@ -69,6 +86,7 @@ class ShareGPTClient:
         except Exception as e:
             print(f"[Exception] Req {request_id}: {str(e)}")
             return None, 0
+
 
     async def process_conversation(self, session, conversation_id, raw_conv, multi_turn):
         history = [
@@ -138,14 +156,17 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", type=str, default="http://localhost:8000/v1/completions")
     parser.add_argument("--trace", type=str, required=True)
-    parser.add_argument("--model", type=str, default="meta-llama/Llama-3.2-1B-Instruct")
+    parser.add_argument("--model", type=str, default="meta-llama/Llama-3.2-1B-Instruct",
+                    help="Model name to send to the vLLM OpenAI server")
+    parser.add_argument("--tokenizer", type=str, default="models/Llama-3.2-1B-Instruct",
+                    help="Local tokenizer path or HF model id")
     parser.add_argument("--rate", type=float, default=1.0)
     parser.add_argument("--max-requests", type=int, default=100)
     parser.add_argument("--multi-turn", action="store_true", help="Enable multi-turn conversation replay")
-    
+
     args = parser.parse_args()
 
-    client = ShareGPTClient(args.url, args.model, args.model, args.rate)
+    client = ShareGPTClient(args.url, args.model, args.tokenizer, args.rate)
     asyncio.run(client.run_trace(args.trace, args.max_requests, args.multi_turn))
 
 
