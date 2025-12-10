@@ -1,10 +1,12 @@
 import enum
+import json
 import os
 import random
+import threading
 import time
-from collections import deque
+from collections import Counter, deque
 from dataclasses import dataclass, field
-from typing import Callable, Deque, Dict, Iterable, List, Optional
+from typing import Any, Callable, Deque, Dict, Iterable, List, Optional
 from typing import Sequence as GenericSequence
 from typing import Set, Tuple, Union
 
@@ -19,6 +21,105 @@ from vllm.sequence import (Sequence, SequenceData, SequenceGroup,
 from vllm.utils import Device, PyObjectCache
 
 logger = init_logger(__name__)
+
+
+class MetricsLogger:
+    """Thread-safe JSONL logger for prefix-cache and latency metrics."""
+
+    def __init__(self,
+                 path: str = "metrics.jsonl",
+                 run_info: Optional[Dict[str, Any]] = None) -> None:
+        self.path = path
+        self._lock = threading.Lock()
+        # Tracks last access time per physical block id.
+        self._block_last_access: Dict[int, float] = {}
+        self._block_hit_counter: Counter[int] = Counter()
+        self.run_info = run_info or {}
+
+    def set_run_info(self, run_info: Dict[str, Any]) -> None:
+        self.run_info = run_info
+
+    def _write_record(self, record: Dict[str, Any]) -> None:
+        if self.run_info:
+            record.update(self.run_info)
+        try:
+            with self._lock:
+                with open(self.path, "a", encoding="utf-8", buffering=1) as f:
+                    f.write(json.dumps(record) + "\n")
+                    f.flush()
+        except OSError as e:
+            # Do not crash scheduling if file is locked or unwritable.
+            logger.warning("MetricsLogger write failed: %s", e)
+
+    def log_prefix_metrics(self, *, timestamp: float, request_id: str,
+                           total_blocks: int,
+                           reused_blocks: GenericSequence[int]) -> None:
+        prefix_hit_rate = (
+            len(reused_blocks) / total_blocks) if total_blocks > 0 else 0.0
+
+        reuse_intervals: List[Optional[float]] = []
+        block_hit_counts: Dict[int, int] = {}
+        for block_id in reused_blocks:
+            last_ts = self._block_last_access.get(block_id)
+            reuse_intervals.append(timestamp - last_ts
+                                   if last_ts is not None else None)
+            self._block_last_access[block_id] = timestamp
+            self._block_hit_counter[block_id] += 1
+            block_hit_counts[block_id] = self._block_hit_counter[block_id]
+
+        record = {
+            "ts": timestamp,
+            "type": "prefix_cache",
+            "request_id": request_id,
+            "total_blocks": total_blocks,
+            "reused_block_count": len(reused_blocks),
+            "reused_blocks": list(reused_blocks),
+            "prefix_hit_rate": prefix_hit_rate,
+            "reuse_intervals": reuse_intervals,
+            "block_hit_counts": block_hit_counts,
+        }
+
+        self._write_record(record)
+
+    def log_latency_metrics(self, *, timestamp: float,
+                            ttft: List[float], tpot: List[float]) -> None:
+        def _summary(values: List[float]) -> Dict[str, float]:
+            if not values:
+                return {
+                    "count": 0,
+                    "mean": 0.0,
+                    "p50": 0.0,
+                    "p90": 0.0,
+                    "p99": 0.0,
+                    "min": 0.0,
+                    "max": 0.0,
+                }
+            sorted_vals = sorted(values)
+            n = len(sorted_vals)
+
+            def _pct(p: float) -> float:
+                idx = min(max(int(p * n) - 1, 0), n - 1)
+                return sorted_vals[idx]
+
+            mean_val = sum(sorted_vals) / n
+            return {
+                "count": n,
+                "mean": mean_val,
+                "p50": _pct(0.5),
+                "p90": _pct(0.9),
+                "p99": _pct(0.99),
+                "min": sorted_vals[0],
+                "max": sorted_vals[-1],
+            }
+
+        record = {
+            "ts": timestamp,
+            "type": "latency",
+            "ttft": _summary(ttft),
+            "tpot": _summary(tpot),
+        }
+
+        self._write_record(record)
 
 # Test-only. If configured, decode is preempted with
 # ARTIFICIAL_PREEMPTION_PROB% probability.
@@ -375,6 +476,24 @@ class Scheduler:
             num_cpu_blocks=num_cpu_blocks,
             sliding_window=self.cache_config.sliding_window,
             enable_caching=self.cache_config.enable_prefix_caching)
+
+        metrics_path = os.getenv("VLLM_METRICS_PATH", "metrics.jsonl")
+        run_id = os.getenv("VLLM_RUN_ID", "")
+        run_mode = os.getenv("VLLM_RUN_MODE", "")
+        eviction_policy = os.getenv("VLLM_EVICTION_POLICY", "LRU")
+        cache_blocks = self.cache_config.num_gpu_blocks
+        cache_size_tokens = (cache_blocks * self.cache_config.block_size
+                             if cache_blocks else None)
+        self.metrics_run_info = {
+            "run_id": run_id,
+            "mode": run_mode,
+            "block_size": self.cache_config.block_size,
+            "cache_blocks": cache_blocks,
+            "cache_size_tokens": cache_size_tokens,
+            "eviction_policy": eviction_policy,
+        }
+        self.metrics_logger = MetricsLogger(metrics_path,
+                                            run_info=self.metrics_run_info)
 
         # Sequence groups in the WAITING state.
         # Contain new prefill or preempted requests.
@@ -1314,130 +1433,6 @@ class Scheduler:
         scheduler_start_time = time.perf_counter()
 
         scheduler_outputs: SchedulerOutputs = self._schedule()
-        
-        # ----------------- IMPROVED INSTRUMENTATION FOR M2 -----------------
-        # Goal:
-        # 1. Collect per-request prefix hit statistics in prefill phase.
-        # 2. Do not break scheduling flow even if metrics fail.
-        # 3. Store metrics in a global structure for later summary.
-
-        if scheduler_outputs.scheduled_seq_groups:
-            try:
-                for scheduled_group in scheduler_outputs.scheduled_seq_groups:
-                    seq_group = scheduled_group.seq_group
-
-                    # Cache sequences once
-                    seqs = seq_group.get_seqs()
-                    if not seqs:
-                        continue  
-                    
-                    first_seq = seqs[0]
-                    req_id = seq_group.request_id
-
-                    # Only instrument PREFILL phase (prompt processing)
-                    if seq_group.is_prefill():
-                        # ---- BLOCK SHARING INFORMATION ----
-                        computed_blocks = self.block_manager.get_common_computed_block_ids(seqs)
-                        num_computed_blocks = len(computed_blocks)
-
-                        # Prompt information
-                        total_tokens = first_seq.get_prompt_len()
-                        block_size = self.cache_config.block_size
-
-                        # Theoretical matched tokens
-                        cached_tokens = num_computed_blocks * block_size
-                        cached_tokens = min(cached_tokens, total_tokens)  # clamp
-
-                        hit_rate = cached_tokens / total_tokens if total_tokens > 0 else 0.0
-
-                        # ---- LOGGING ----
-                        if num_computed_blocks > 0:
-                            logger.info(
-                                f"[Metrics] Req {req_id}: Prefix Hit "
-                                f"{cached_tokens}/{total_tokens} tokens "
-                                f"({hit_rate*100:.1f}%), "
-                                f"{num_computed_blocks} blocks shared."
-                            )
-                        else:
-                            logger.info(
-                                f"[Metrics] Req {req_id}: Cold Start (no shared blocks)."
-                            )
-
-                        # ---- SAVE TO METRICS DICT ----
-                        # self.metrics is a dict you maintain inside LLMEngine
-                        if not hasattr(self, "metrics"):
-                            self.metrics = {"requests": {}}
-
-                        self.metrics["requests"][req_id] = {
-                            "num_computed_blocks": num_computed_blocks,
-                            "total_prompt_tokens": total_tokens,
-                            "cached_tokens": cached_tokens,
-                            "hit_rate": float(hit_rate),
-                        }
-
-                        import json
-
-                        # Record block reuse in the same JSONL file
-                        if computed_blocks:
-                            blk_record = {
-                                "type": "block_hit",
-                                "block_ids": computed_blocks,
-                                "count": 1  # every reuse increments these blocks once
-                            }
-                            with open("metrics.jsonl", "a") as f:
-                                f.write(json.dumps(blk_record) + "\n")
-                    
-                        record = {
-                            "type": "request",
-                            "request_id": req_id,
-                            "num_computed_blocks": num_computed_blocks,
-                            "total_prompt_tokens": total_tokens,
-                            "cached_tokens": cached_tokens,
-                            "hit_rate": float(hit_rate),
-                        }
-
-                        with open("metrics.jsonl", "a") as f:
-                            f.write(json.dumps(record) + "\n")
-
-                    # Future extension: add decode-phase tracking here
-                    # else:
-                    #     ...
-
-            except Exception as e:
-                logger.warning(f"[Metrics] Error calculating prefix stats: {e}")
-        # -------------------------------------------------------------------
-
-        # # Track which blocks are reused the most
-        # if not hasattr(self, "block_hit_counter"):
-        #     from collections import Counter
-        #     self.block_hit_counter = Counter()
-
-        # for blk in computed_blocks:
-        #     self.block_hit_counter[blk] += 1
-
-        # most_common_hits = self.block_hit_counter.most_common()
-        # max_count = most_common_hits[0][1]
-        # top_blocks = [blk for blk, cnt in most_common_hits if cnt == max_count]
-
-        # from numpy import np
-        # import json
-        # reqs = list(self.metrics["requests"].values())
-        # hit_rates = np.array([r["hit_rate"] for r in reqs])
-
-        # summary = {
-        #     "total_requests": len(reqs),
-        #     "avg_hit_rate": float(hit_rates.mean()),
-        #     "min_hit_rate": float(hit_rates.min()),
-        #     "max_hit_rate": float(hit_rates.max()),
-        #     "std_hit_rate": float(hit_rates.std()),
-        #     "block_hit_analysis": {
-        #         "max_block_hit_count": max_count,
-        #         "block_ids_with_max_hits": top_blocks
-        #     }
-        # }
-
-        # with open("metrics_summary.json", "w") as f:
-        #     json.dump(summary, f, indent=2)
 
         now = time.time()
 
@@ -1636,8 +1631,37 @@ class Scheduler:
 
             self._async_stopped.clear()
 
+    def _log_prefix_cache_metrics(self, seq_group: SequenceGroup) -> None:
+        """Collect prefix hit rate, block hits, reuse intervals."""
+        if not self.cache_config.enable_prefix_caching:
+            return
+
+        # Only meaningful during prefill allocation.
+        if not seq_group.is_prefill():
+            return
+
+        seqs = seq_group.get_seqs(status=SequenceStatus.WAITING)
+        if not seqs:
+            return
+
+        try:
+            reused_blocks = list(
+                self.block_manager.get_common_computed_block_ids(seqs))
+            block_table = self.block_manager.get_block_table(seqs[0])
+            total_blocks = len([b for b in block_table if b is not None])
+
+            self.metrics_logger.log_prefix_metrics(
+                timestamp=time.time(),
+                request_id=seq_group.request_id,
+                total_blocks=total_blocks,
+                reused_blocks=reused_blocks,
+            )
+        except Exception as exc:  # pragma: no cover - best-effort metrics
+            logger.warning("Metrics logging skipped: %s", exc)
+
     def _allocate_and_set_running(self, seq_group: SequenceGroup) -> None:
         self.block_manager.allocate(seq_group)
+        self._log_prefix_cache_metrics(seq_group)
         for seq in seq_group.get_seqs(status=SequenceStatus.WAITING):
             seq.status = SequenceStatus.RUNNING
 

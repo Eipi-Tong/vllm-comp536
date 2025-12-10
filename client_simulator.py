@@ -25,7 +25,7 @@ import json
 import time
 import numpy as np
 import aiohttp
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from transformers import AutoTokenizer
 
 ROLE_MAPPING = {
@@ -35,12 +35,26 @@ ROLE_MAPPING = {
 }
 
 class ShareGPTClient:
-    def __init__(self, api_url, model_name, tokenizer_name, rate):
+    def __init__(self,
+                 api_url,
+                 model_name,
+                 tokenizer_name,
+                 rate,
+                 run_meta: Optional[Dict[str, Any]] = None,
+                 run_meta_out: Optional[str] = None):
         self.api_url = api_url
         self.model_name = model_name
         self.rate = rate
         print(f"Loading tokenizer: {tokenizer_name}...")
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+        self.run_meta = run_meta or {}
+        self.run_meta_out = run_meta_out
+        if self.run_meta_out:
+            try:
+                with open(self.run_meta_out, "w", encoding="utf-8") as f:
+                    json.dump(self.run_meta, f, indent=2)
+            except Exception as e:
+                print(f"[warn] failed to write run_meta: {e}")
 
     def apply_template(self, messages: List[Dict[str, str]]) -> str:
         return self.tokenizer.apply_chat_template(
@@ -142,10 +156,31 @@ if __name__ == "__main__":
     parser.add_argument("--rate", type=float, default=1.0)
     parser.add_argument("--max-requests", type=int, default=100)
     parser.add_argument("--multi-turn", action="store_true", help="Enable multi-turn conversation replay")
+    parser.add_argument("--block-size", type=int, default=None)
+    parser.add_argument("--cache-blocks", type=int, default=None)
+    parser.add_argument("--eviction-policy", type=str, default=None)
+    parser.add_argument("--metrics-path", type=str, default=None)
+    parser.add_argument("--run-id", type=str, default="")
+    parser.add_argument("--mode", type=str, default="")
+    parser.add_argument("--run-meta-out", type=str, default=None)
     
     args = parser.parse_args()
 
-    client = ShareGPTClient(args.url, args.model, args.model, args.rate)
+    run_meta = {
+        "run_id": args.run_id,
+        "mode": args.mode or ("multi" if args.multi_turn else "single"),
+        "block_size": args.block_size,
+        "cache_blocks": args.cache_blocks,
+        "eviction_policy": args.eviction_policy,
+        "metrics_path": args.metrics_path,
+        "trace": args.trace,
+        "model": args.model,
+        "rate": args.rate,
+        "max_requests": args.max_requests,
+    }
+
+    client = ShareGPTClient(args.url, args.model, args.model, args.rate,
+                            run_meta, args.run_meta_out)
     asyncio.run(client.run_trace(args.trace, args.max_requests, args.multi_turn))
 
 

@@ -1,7 +1,20 @@
 import os
 
+# Some triton builds (e.g., on CPU without full cache API) lack default_cache_dir.
+try:
 from triton.runtime.cache import (FileCacheManager, default_cache_dir,
                                   default_dump_dir, default_override_dir)
+except Exception:  # pragma: no cover - fallback for minimal Triton
+    from triton.runtime.cache import FileCacheManager  # type: ignore
+
+    def default_cache_dir():
+        return os.environ.get("TRITON_CACHE_DIR", "/tmp")
+
+    def default_dump_dir():
+        return "/tmp"
+
+    def default_override_dir():
+        return "/tmp"
 
 from vllm.logger import init_logger
 
