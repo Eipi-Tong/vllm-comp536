@@ -204,8 +204,14 @@ benchmarks/*.json
 actionlint
 shellcheck*/
 
+# Trace files
+*.jsonl
+
 # Models
 models/*
 
 # Datasets
 datasets/*
+
+# SSH
+.ssh/*

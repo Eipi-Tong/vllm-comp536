@@ -1,57 +1,34 @@
-# from datasets import load_dataset
-
-# ds = load_dataset(
-#     "json", 
-#     data_files="datasets/ShareGPT_Vicuna_unfiltered/ShareGPT_V3_unfiltered_cleaned_split_no_imsorry.json"
-# )["train"]
-
-# # print(ds.keys())
-
-# for i in range(1):
-#     print(f"--- Example {i} ---")
-#     print(ds[i]["id"])
-#     # print(ds[i]["conversations"])
-#     for msg in ds[i]["conversations"]:
-#         print(msg)
-#         print()
-#         # break
-#     print()
-
-
-
 import argparse
 import asyncio
 import json
-import time
-import numpy as np
-import aiohttp
 import os
-from typing import List, Dict, Any
+import time
+from typing import Optional
+from datetime import datetime
+
+import aiohttp
+import numpy as np
+import pyarrow.parquet as pq
 from transformers import AutoTokenizer
 
-ROLE_MAPPING = {
-    "human": "user",
-    "gpt": "assistant",
-    "system": "system"
-}
 
-class ShareGPTClient:
-    def __init__(self, api_url, model_name, tokenizer_name, rate):
+ROLE_MAPPING = {"human": "user", "gpt": "assistant", "system": "system"}
+
+
+class Client:
+    def __init__(self, api_url: str, model_name: str, tokenizer_name: str, rate: float):
         self.api_url = api_url
         self.model_name = model_name
         self.rate = rate
         print(f"Loading tokenizer: {tokenizer_name}...")
         self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
         self.metrics_path = os.getenv("CLIENT_METRICS_PATH", "client_metrics.jsonl")
-        # Clear old metrics file on each run
-        open(self.metrics_path, "w").close()
+        os.truncate(self.metrics_path, 0)
 
-    def apply_template(self, messages: List[Dict[str, str]]) -> str:
-        return self.tokenizer.apply_chat_template(
-            messages, tokenize=False, add_generation_prompt=True
-        )
+    def apply_template(self, messages: list[dict[str, str]]) -> str:
+        return self.tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
 
-    async def send_request(self, session, prompt, request_id):
+    async def send_request(self, session: aiohttp.ClientSession, prompt: str, request_id: str, timestamp: Optional[float] = None):
         payload = {
             "model": self.model_name,
             "prompt": prompt,
@@ -65,16 +42,16 @@ class ShareGPTClient:
 
                 if response.status == 200:
                     resp_json = await response.json()
-                    output_text = resp_json['choices'][0]['text']
+                    output_text = resp_json["choices"][0]["text"]
 
                     record = {
                         "request_id": request_id,
-                        "latency": latency,   # approx TTFT since we don’t stream
+                        "latency": latency,  # approx TTFT since we don’t stream
                         "prompt_len_chars": len(prompt),
                         "output_len_chars": len(output_text),
                         "workload": os.getenv("WORKLOAD_NAME", "agentbank-apps"),
                         "multi_turn": self.rate is not None,  # crude flag; or pass in explicitly
-                        "timestamp": time.time(),
+                        "timestamp": time.time() if timestamp is None else timestamp,
                     }
                     with open(self.metrics_path, "a") as f:
                         f.write(json.dumps(record) + "\n")
@@ -87,110 +64,142 @@ class ShareGPTClient:
             print(f"[Exception] Req {request_id}: {str(e)}")
             return None, 0
 
+    async def _process_conversation(self, session: aiohttp.ClientSession, conversation_id: int, item: dict, multi_turn: bool):
+        raise NotImplementedError("Subclasses should implement this method.")
 
-    async def process_conversation(self, session, conversation_id, raw_conv, multi_turn):
-        history = [
-            # Force a long shared prefix for every single request
-            # {"role": "system", "content": "You are a helpful assistant. " * 50} 
-        ]
-        
-        # Iterate through turns
-        # ShareGPT is [User, Assistant, User, Assistant...]
-        for i in range(0, len(raw_conv) - 1, 2):
-            user_turn = raw_conv[i]
-            
-            if user_turn['from'] not in ['human', 'user']:
-                continue
-
-            # 1. Add User Input
-            history.append({"role": "user", "content": user_turn['value']})
-            
-            # 2. Build Prompt
-            full_prompt = self.apply_template(history)
-            
-            # 3. Send Request
-            req_id = f"conv_{conversation_id}_turn_{i//2}"
-            output_text, latency = await self.send_request(session, full_prompt, req_id)
-            
-            if output_text:
-                print(f"[Success] {req_id} ({len(full_prompt)} chars) -> {latency:.2f}s")
-                # 4. Add Assistant Output to History
-                history.append({"role": "assistant", "content": output_text})
-            else:
-                break # Stop conversation on error
-
-            if not multi_turn:
-                break # Stop after first turn if not multi-turn mode
-
-    async def run_trace(self, trace_path, max_requests=None, multi_turn=False):
+    async def run_trace(self, trace_path: str, max_requests: Optional[int] = None, multi_turn=False):
         print(f"Loading trace from {trace_path}...")
-        with open(trace_path, 'r') as f:
-            dataset = json.load(f)
-        
+        with open(trace_path, "rb") as f:
+            if trace_path.endswith(".json"):
+                dataset = json.load(f)
+            elif trace_path.endswith(".jsonl"):
+                dataset = []
+                for line in f:
+                    line = line.strip()
+                    if line:
+                        dataset.append(json.loads(line))
+            elif trace_path.endswith(".parquet"):
+                table = pq.read_table(f)
+                dataset = table.to_pylist()
+            else:
+                return
+
         async with aiohttp.ClientSession() as session:
             tasks = []
             req_count = 0
-            
+
             start_time = time.time()
 
             for i, item in enumerate(dataset):
                 if max_requests and req_count >= max_requests:
                     break
-                
-                raw_conv = item.get('conversations', [])
-                if not raw_conv: continue
 
                 # Schedule the conversation
-                task = asyncio.create_task(self.process_conversation(session, i, raw_conv, multi_turn))
+                task = asyncio.create_task(self._process_conversation(session, i, item, multi_turn))
                 tasks.append(task)
                 req_count += 1
-                
+
                 # Poisson Arrival
-                await asyncio.sleep(np.random.exponential(1.0 / self.rate))
+                if self.rate > 1e-6:
+                    await asyncio.sleep(np.random.exponential(1.0 / self.rate))
 
             print("All conversations scheduled. Waiting...")
             await asyncio.gather(*tasks)
             print(f"Finished {req_count} conversations.")
 
+
+class ShareGPTClient(Client):
+    async def _process_conversation(self, session, conversation_id, item, multi_turn):
+        raw_conv = item.get("conversations")
+        if not raw_conv:
+            return
+
+        history = [
+            # Force a long shared prefix for every single request
+            # {"role": "system", "content": "You are a helpful assistant. " * 50}
+        ]
+
+        # Iterate through turns
+        # ShareGPT is [User, Assistant, User, Assistant...]
+        for i in range(0, len(raw_conv) - 1, 2):
+            user_turn = raw_conv[i]
+
+            if user_turn["from"] not in ["human", "user"]:
+                continue
+
+            # 1. Add User Input
+            history.append({"role": "user", "content": user_turn["value"]})
+
+            # 2. Build Prompt
+            full_prompt = self.apply_template(history)
+
+            # 3. Send Request
+            req_id = f"conv_{conversation_id}_turn_{i // 2}"
+            output_text, latency = await self.send_request(session, full_prompt, req_id)
+
+            if output_text:
+                print(f"[Success] {req_id} ({len(full_prompt)} chars) -> {latency:.2f}s")
+                # 4. Add Assistant Output to History
+                history.append({"role": "assistant", "content": output_text})
+            else:
+                break  # Stop conversation on error
+
+            if not multi_turn:
+                break  # Stop after first turn if not multi-turn mode
+
+
+class CCBenchTrajectoriesClient(Client):
+    async def _process_conversation(self, session, conversation_id, item, multi_turn):
+        if "trajectory" not in item:
+            return
+
+        history = []
+        steps = json.loads(item["trajectory"])
+        for i in range(len(steps)):
+            step = steps[i]
+            if not "message" in step or step["message"]["role"] != "user":
+                continue
+
+            # 1. Add User Input
+            history.append({"role": "user", "content": step["message"]["content"]})
+
+            # 2. Build Prompt
+            full_prompt = self.apply_template(history)
+
+            # 3. Send Request
+            req_id = f"conv_{conversation_id}_turn_{i}"
+            timestamp = datetime.strptime(step["timestamp"], "%Y-%m-%dT%H:%M:%S.%f%z").timestamp()
+            output_text, latency = await self.send_request(session, full_prompt, req_id, timestamp)
+
+            if output_text:
+                print(f"[Success] {req_id} ({len(full_prompt)} chars) -> {latency:.2f}s")
+                # 4. Add Assistant Output to History
+                history.append({"role": "assistant", "content": output_text})
+            else:
+                break  # Stop conversation on error
+
+            if not multi_turn:
+                break  # Stop after first turn if not multi-turn mode
+
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--url", type=str, default="http://localhost:8000/v1/completions")
-    parser.add_argument("--trace", type=str, required=True)
-    parser.add_argument("--model", type=str, default="meta-llama/Llama-3.2-1B-Instruct",
-                    help="Model name to send to the vLLM OpenAI server")
-    parser.add_argument("--tokenizer", type=str, default="models/Llama-3.2-1B-Instruct",
-                    help="Local tokenizer path or HF model id")
-    parser.add_argument("--rate", type=float, default=1.0)
+    parser.add_argument("--template", type=str, choices=["sharegpt", "ccbench_trajectories"], default="sharegpt", help="Prompt template")
+    parser.add_argument("--trace", type=lambda path: path if path.endswith((".json", ".jsonl", ".parquet")) else argparse.ArgumentTypeError("Trace file must be .json/.jsonl/.parquet"), required=True, help="Path to the trace file (.json/.jsonl/.parquet)")
+    parser.add_argument("--model", type=str, default="meta-llama/Llama-3.2-1B-Instruct", help="Model name to send to the vLLM OpenAI server")
+    parser.add_argument("--tokenizer", type=str, default="models/Llama-3.2-1B-Instruct", help="Local tokenizer path or HF model id")
+    parser.add_argument("--rate", type=float, default=1.0, help="Parameter for Poisson distribution of request sending time (0 if the request sending time is provided in the trace)")
     parser.add_argument("--max-requests", type=int, default=100)
     parser.add_argument("--multi-turn", action="store_true", help="Enable multi-turn conversation replay")
 
     args = parser.parse_args()
 
-    client = ShareGPTClient(args.url, args.model, args.tokenizer, args.rate)
+    if args.template == "sharegpt":
+        ClientType = ShareGPTClient
+    elif args.template == "ccbench_trajectories":
+        ClientType = CCBenchTrajectoriesClient
+    else:
+        ClientType = Client
+    client = ClientType(args.url, args.model, args.tokenizer, args.rate)
     asyncio.run(client.run_trace(args.trace, args.max_requests, args.multi_turn))
-
-
-"""
-
-### 3. Usage
-
-1.  **Download ShareGPT:**
-    You need the `ShareGPT_V3_unfiltered_cleaned_split.json` (or similar). If you don't have it, you can download a sample or the full set from HuggingFace.
-
-2.  **Start your vLLM Server (Simulator):**
-    Ensure your server (from Milestone 1) is running:
-    ```bash
-    python -m vllm.entrypoints.openai.api_server \
-      --model meta-llama/Llama-3.2-1B-Instruct \
-      --device cpu \
-      --port 8000
-    ```
-
-3.  **Run the Client:**
-    ```bash
-    python client_simulator.py \
-      --trace sharegpt.json \
-      --model meta-llama/Llama-3.2-1B-Instruct \
-      --rate 2.0
-
-"""
