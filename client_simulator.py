@@ -154,9 +154,9 @@ class CCBenchTrajectoriesClient(Client):
             return
 
         history = []
-        steps = json.loads(item["trajectory"])
-        for i in range(len(steps)):
-            step = steps[i]
+        turn = 0
+
+        for step in json.loads(item["trajectory"]):
             if not "message" in step or step["message"]["role"] != "user":
                 continue
 
@@ -167,7 +167,8 @@ class CCBenchTrajectoriesClient(Client):
             full_prompt = self.apply_template(history)
 
             # 3. Send Request
-            req_id = f"conv_{conversation_id}_turn_{i}"
+            req_id = f"conv_{conversation_id}_turn_{turn}"
+            turn += 1
             timestamp = datetime.strptime(step["timestamp"], "%Y-%m-%dT%H:%M:%S.%f%z").timestamp()
             output_text, latency = await self.send_request(session, full_prompt, req_id, timestamp)
 
